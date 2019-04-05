@@ -8,7 +8,17 @@ div.text {
     padding: 10px;
 }
 
-.navbar-nav > li > .dropdown-menu {
-    background-color: #303030;
-    color: white;
+.navbar-default .navbar-nav > li > .dropdown-menu {
+    background-color: #69899f;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a {
+    color: #d7e2e9;
+}
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:hover,
+
+.navbar-default .navbar-nav > li > .dropdown-menu > li > a:focus {
+    color: #e5dbdb;
+    background-color: #425766;
 }
