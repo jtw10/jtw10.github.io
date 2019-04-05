@@ -8,8 +8,20 @@ div.text {
     padding: 10px;
 }
 
+.navbar-nav {
 
-.navbar{
-    left:100px;
-    right:100px;
+    margin-right: 0%;
+}
+
+.navbar-nav li {
+    text-align: center;
+    border-radius: 4px;
+    color: #2a4068;
+    cursor: pointer;
+}
+
+.navbar-nav li:hover {
+    background-color: #99b1d7;
+    color: #2a4068;
+    opacity: 0.7;
 }
