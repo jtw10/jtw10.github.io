@@ -8,4 +8,7 @@ div.text {
     padding: 10px;
 }
 
-.navbar-nav > li > .dropdown-menu { background-color: #202020;}
+.navbar-nav > li > .dropdown-menu {
+    background-color: #303030;
+    color: white;
+}
