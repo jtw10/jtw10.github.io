@@ -9,12 +9,11 @@ div.text {
 }
 
 .navbar-nav {
-
     margin-right: 0%;
 }
 
 .navbar-nav li {
-    text-align: center;
+    text-align: right;
     border-radius: 4px;
     color: #2a4068;
     cursor: pointer;
