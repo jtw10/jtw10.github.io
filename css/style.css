@@ -7,3 +7,5 @@ div.text {
     margin: 10%;
     padding: 10px;
 }
+
+.navbar-nav > li > .dropdown-menu { background-color: #FF0000; }
