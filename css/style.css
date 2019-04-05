@@ -22,7 +22,6 @@ div.text {
 .navbar-nav li:hover {
     background-color: #99b1d7;
     color: #2a4068;
-    opacity: 0.7;
 }
 
 .carousel-inner > .item > img {
