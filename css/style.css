@@ -25,3 +25,7 @@ div.text {
     color: #2a4068;
     opacity: 0.7;
 }
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
