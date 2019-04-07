@@ -41,9 +41,10 @@ div.container {
 footer {
     background-color: #343a40;
     color: #868e96;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
+    height: 65px;
 }
 
 #wrap
@@ -111,7 +112,7 @@ input[type=submit]:hover {
     clear: both;
 }
 
-/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+/* Responsive layout - when the screen is less than 600px wide the two columns will stack on top of each */
 @media screen and (max-width: 600px) {
     .column, input[type=submit] {
         width: 100%;
