@@ -37,9 +37,24 @@ div.container {
     margin: 0 auto;
 }
 
+/* footer flush to bottom */
 footer {
     background-color: #343a40;
     color: #868e96;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#wrap
+{
+    min-height: 100%;
+}
+
+#main
+{
+    overflow:auto;
+    padding-bottom:150px; /* this needs to be bigger than footer height*/
 }
 
 
@@ -81,7 +96,7 @@ input[type=submit]:hover {
     width: 100%;
 }
 
-/* Create two columns that float next to eachother */
+/* Create two columns that float next to each other for the contact me box */
 .column {
     float: left;
     width: 50%;
@@ -103,3 +118,4 @@ input[type=submit]:hover {
         margin-top: 0;
     }
 }
+
