@@ -2,8 +2,13 @@ p {
     color: whitesmoke;
 }
 
+html {
+    height: 100%;
+}
+
 body {
     background-color: #555554;
+    height: 100%;
 }
 
 div.text {
@@ -22,7 +27,7 @@ div.container {
 }
 
 .navbar-nav li {
-    text-align: right;
+    text-align: center;
     border-radius: 4px;
     color: #2a4068;
     cursor: pointer;
