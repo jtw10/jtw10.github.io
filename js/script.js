@@ -87,7 +87,7 @@ fname.addEventListener('input', function(){
     else if(name == "Aaron" || name == "aaron" || name == "AARON"){
         alert("안녕하세요, 사랑해요 오빠!~~");
     }
-    else if(name == "Jimmy" || name == "Jim" || name.toLowerCase() == "bryan" || name.toLowerCase() == "ramon"){
+    else if(name.toLowerCase() == "bryan" || name.toLowerCase() == "ramon"){
         alert("你很美丽!~~ XD");
     }
     else if(name == "Jimmy" || name == "Jim"){
