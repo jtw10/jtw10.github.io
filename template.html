@@ -53,6 +53,16 @@
 </nav>
 
 
+<form method="post" action="#">
+    Product Name:<br>
+    <input type="text" name="pname" id="pname"><br>
+    Product Price:<br>
+    <input type="text" name="price" id="price"><br>
+    Product Image:<br>
+    <input type="text" name="image" id="image"><br>
+    <button type="button" onclick="addDatatest()">Add Data</button>
+</form>
+
 
 <!-- Footer -->
 <footer class="page-footer font-small blue">
@@ -62,10 +72,22 @@
 </footer>
 
 
-
+<script src="https://www.gstatic.com/firebasejs/5.9.3/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDRvFgEK0OTGlBgsZPLXlflmBlJjvbyTaU",
+        authDomain: "lab9-f300e.firebaseapp.com",
+        databaseURL: "https://lab9-f300e.firebaseio.com",
+        projectId: "lab9-f300e",
+        storageBucket: "lab9-f300e.appspot.com",
+        messagingSenderId: "761305031724"
+    };
+    firebase.initializeApp(config);
+</script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
+<script src="js/script.js"></script>
 </body>
 </html>
