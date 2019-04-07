@@ -1,6 +1,5 @@
 // https://firebase.google.com/docs/web/setup
 var db = firebase.firestore();
-var fbcomment = db.collection("comments");
 
 function addData(){
     alert("Thank you for your feedback!");
