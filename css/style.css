@@ -25,6 +25,7 @@ div.card {
     margin-left: 6%;
     margin-right: 6%;
     margin-bottom: 2%;
+    margin-top: 2%;
     background-color: #797979;
 }
 
@@ -56,6 +57,7 @@ div.col-md-10 {
 
 /* footer flush to bottom */
 footer {
+    z-index: 1; /* this keeps my footer on top of other elements when scrolling */
     background-color: #343a40;
     color: #868e96;
     position: fixed;

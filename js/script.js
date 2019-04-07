@@ -1,4 +1,6 @@
+// https://firebase.google.com/docs/web/setup
 var db = firebase.firestore();
+var fbcomment = db.collection("comments");
 
 function addData(){
     alert("Thank you for your feedback!");
@@ -22,6 +24,59 @@ function addData(){
         console.error("Error adding comment: ", error);
     });
 }
+
+
+db.collection("comments").get().then(function(querySnapshot) {
+    querySnapshot.forEach(function(doc) {
+        // doc.data() is never undefined for query doc snapshots
+        console.log(doc.id, " => ", doc.data());
+        var a = doc.data();
+        console.log(a);
+    });
+});
+
+
+const collection = db.collection('comments');
+collection.get().then(snapshot => {
+    snapshot.forEach(doc => {
+        // console.log( doc.data().firstname );
+        // console.log( doc.data().lastname );
+        // console.log( doc.data().rating );
+        // console.log( doc.data().comments );
+        var dbo = Object.assign({ uid: doc.id }, doc.data());
+        var first_name = dbo.firstname;
+        var last_name = dbo.lastname;
+        var rating = dbo.rating;
+        var comments = dbo.comments;
+        var name = first_name + ' ' + last_name;
+
+        var div = document.createElement("div");
+
+        div.innerHTML =
+            '<div class="container">\n' +
+            '<div class="card">\n' +
+            '<div class="card-body">\n' +
+            '<div class="row">\n' +
+            '<div class="col-md-10">\n' +
+            '<h4 class="float-left" style="color: lightblue"><strong>' + name + '</strong></h4>\n' +
+            '<div class="clearfix"></div>\n' +
+            '<h6 class="float-left" style="color: lightcyan"><strong>' + rating + '</strong></h6>\n' +
+            '<div class="clearfix"></div>\n' +
+            '<p>' + comments + '</p>\n' +
+            '</div>\n' +
+            '</div>\n' +
+            '</div>\n' +
+            '</div>\n' +
+            '</div>';
+
+        document.body.appendChild(div);
+    });
+    var spacing = document.createElement("spacing");
+    spacing.innerHTML =
+        '<br><br><br><br><br>';
+    document.body.append(spacing);
+});
+
 
 
 var vip = ["Richard", "richard", "Rich", "rich", "Hart", "hart"];
@@ -92,6 +147,9 @@ fname.addEventListener('input', function(){
     }
     else if(name == "Jimmy" || name == "Jim"){
         alert("Everyday is 星期七!!~~ :3");
+    }
+    else if(name.toLowerCase() == "dhruv" || name.toLowerCase() == "mehtab" || name.toLowerCase() == "tub"){
+        alert("नमस्ते तुम सबसे महान हो");
     }
     else{
         var result = "no"
