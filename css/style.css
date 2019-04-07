@@ -21,6 +21,18 @@ div.container {
     background-color: #939393;
 }
 
+div.card {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 2%;
+    background-color: #505050;
+}
+
+div.col-md-10 {
+    margin: 1%;
+    padding: 1%;
+}
+
 .navbar-nav {
     margin-right: 0;
     color: #343a40;
