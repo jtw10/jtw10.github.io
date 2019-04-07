@@ -8,5 +8,7 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="@types/firebase-client" level="application" />
+    <orderEntry type="library" name="@types/firebase-token-generator" level="application" />
   </component>
 </module>
