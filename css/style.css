@@ -13,6 +13,16 @@ p {
     height: 100%;
 }
 
+#landingcard {
+    background: #cccccc;
+    opacity: 0.9;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    border-radius: 5%;
+}
+
 html {
     height: 100%;
 }
