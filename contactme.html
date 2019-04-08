@@ -74,19 +74,21 @@
         <div class="column">
             <form method="post" action="#" id="commentbox">
                 <label for="fname">First Name</label>
-                <input type="text" id="fname" name="firstname" placeholder="First Name" required>
+                <input type="text" id="fname" name="firstname" placeholder="First Name" style="margin-bottom: 1px; margin-top: 1px; height: 50px;" required>
                 <label for="lname">Last Name</label>
-                <input type="text" id="lname" name="lastname" placeholder="Last Name" required>
+                <input type="text" id="lname" name="lastname" placeholder="Last Name" style="margin-bottom: 1px; margin-top: 1px; height: 50px;" required>
                 <label for="rating">Rate My Website</label>
-                <select id="rating" name="rating">
+                <select id="rating" name="rating" style="margin-bottom: 1px; margin-top: 1px; height: 50px;">
                     <option value="Good">Good</option>
                     <option value="Great">Great</option>
                     <option value="Amazing">Amazing</option>
                     <option value="Excellent">Excellent</option>
                     <option value="Extraordinary">Extraordinary</option>
                 </select>
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Your e-mail will be kept private" style="margin-bottom: 1px; margin-top: 1px; height: 50px;">
                 <label for="comments">Comments</label>
-                <textarea id="comments" name="comments" placeholder="Leave a comment here!" style="height:130px"></textarea>
+                <textarea id="comments" name="comments" placeholder="Leave a comment here!" style="height:120px"></textarea>
                 <button type="button" class="btn btn-primary" id="submit" onclick="addData()">Submit</button>
             </form>
         </div>

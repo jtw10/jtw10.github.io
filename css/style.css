@@ -62,7 +62,7 @@ div.col-md-10 {
 
 /* footer flush to bottom */
 footer {
-    z-index: 1; /* this keeps my footer on top of other elements when scrolling */
+    z-index: 1111; /* this keeps my footer on top of other elements when scrolling */
     background-color: #343a40;
     color: #868e96;
     position: fixed;
