@@ -92,6 +92,10 @@ div.col-md-10 {
     margin: 0 auto;
 }
 
+.thumbnail {
+
+}
+
 /* footer flush to bottom */
 footer {
     z-index: 1111; /* this keeps my footer on top of other elements when scrolling */
