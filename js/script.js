@@ -85,76 +85,6 @@ var badwords = ["bad", "negative", "no", "horrible", "terrible", "disgusting", "
     "no good", "shit", "fuck", "bitch"];
 
 
-fname.addEventListener('input', function(){
-    var name = document.getElementById("fname").value;
-    var num = vip.indexOf(name);
-    console.log(name);
-    if(num != -1){
-        alert("Hello Rich! Welcome to my website")
-    }
-    else{
-        var result = "no"
-    }
-});
-
-
-lname.addEventListener('input', function(){
-    var name = document.getElementById("lname").value;
-    var num = vip.indexOf(name);
-    console.log(name);
-    if(num != -1){
-        alert("Hello Mr. Hart! Welcome to my website")
-    }
-    else{
-        var result = "no"
-    }
-});
-
-
-comments.addEventListener('input', function(){
-    var words = document.getElementById("comments").value;
-    console.log(words);
-    if(badwords.includes(words.toLowerCase())){
-        alert("Please use friendly language. Thank you!");
-        document.getElementById("commentbox").reset();
-    }
-    else{
-        var result = "no"
-    }
-});
-
-
-fname.addEventListener('input', function(){
-    var name = document.getElementById("fname").value;
-    var num = jimbob.indexOf(name);
-    console.log(name);
-    if(num != -1){
-        document.getElementById("commentbox").reset();
-    }
-    else if(name == "niku" || name == "Niku" || name == "NIKU"){
-        alert("Hi Niku!");
-        alert("OwO");
-        alert("UwU");
-        alert("You are a potato!!!");
-        document.getElementById("commentbox").reset();
-    }
-    else if(name == "Aaron" || name == "aaron" || name == "AARON"){
-        alert("안녕하세요, 사랑해요 오빠!~~");
-    }
-    else if(name.toLowerCase() == "bryan" || name.toLowerCase() == "ramon"){
-        alert("你很美丽!~~ XD");
-    }
-    else if(name == "Jimmy" || name == "Jim"){
-        alert("Everyday is 星期七!!~~ :3");
-    }
-    else if(name.toLowerCase() == "dhruv" || name.toLowerCase() == "mehtab" || name.toLowerCase() == "tub"){
-        alert("नमस्ते तुम सबसे महान हो");
-    }
-    else{
-        var result = "no"
-    }
-});
-
 
 function reloadPage() {
     window.location.reload()
@@ -163,3 +93,4 @@ function reloadPage() {
 
 // document.getElementById("commentbox").reset();
 // document.getElementById("submit").addEventListener("click", reloadPage());
+
