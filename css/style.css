@@ -49,6 +49,15 @@ div.container {
     background-color: #939393;
 }
 
+#gettall {
+    height: 500%;
+}
+
+div.containerfeedback {
+    background-color: #939393;
+    height: 500%;
+}
+
 div.card {
     margin-left: 6%;
     margin-right: 6%;
