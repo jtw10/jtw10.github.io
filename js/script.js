@@ -82,7 +82,7 @@ var vip = ["Richard", "richard", "Rich", "rich", "Hart", "hart"];
 var jimbob = ["jimmy", "jim"];
 // using a list of bad words to filter negative comments
 var badwords = ["bad", "negative", "no", "horrible", "terrible", "disgusting", "filter", "unforgivable", "nasty",
-    "no good", "shit", "fuck", "bitch"];
+    "no good", "shit", "fuck", "bitch", "josh", "Josh", "JOSH", "JoSh", "JOsH", "JosH"];
 
 
 
@@ -90,6 +90,14 @@ function reloadPage() {
     window.location.reload()
 }
 
+function toggletext(){
+    var x = document.getElementById("toggle");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+}
 
 // document.getElementById("commentbox").reset();
 // document.getElementById("submit").addEventListener("click", reloadPage());
