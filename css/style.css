@@ -310,3 +310,7 @@ input[type=submit]:hover {
     margin-right: auto;
     left: 50%;
 }
+
+.embed-responsive embed-responsive-4by3 {
+    left: 50%;
+}
