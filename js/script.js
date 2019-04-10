@@ -49,6 +49,14 @@ collection.get().then(snapshot => {
         var comments = dbo.comments;
         var name = first_name + ' ' + last_name;
 
+        // these two if statements will make sure the comment card and name are not left blank
+        if (name == ' '){
+            name = "Secret Admirer"
+        }
+        if (comments == ''){
+            comments = "It's beautiful and I like it"
+        }
+
         var div = document.createElement("div");
 
         div.innerHTML =
@@ -100,5 +108,4 @@ function toggletext(){
 }
 
 // document.getElementById("commentbox").reset();
-// document.getElementById("submit").addEventListener("click", reloadPage());
 
