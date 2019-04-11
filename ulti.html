@@ -29,6 +29,7 @@
                     <a class="dropdown-item" href="database.html">Database</a>
                     <a class="dropdown-item" href="webdev.html">Web Development</a>
                     <a class="dropdown-item" href="photography.html">Photography</a>
+                    <a class="dropdown-item" href="guessgame.html">Guess Game</a>
                 </div>
             </li>
             <li class="nav-item dropdown active">
@@ -197,6 +198,16 @@
         messagingSenderId: "761305031724"
     };
     firebase.initializeApp(config);
+</script>
+<script>
+    function toggletext(){
+        var x = document.getElementById("toggle");
+        if (x.style.display === "none") {
+            x.style.display = "block";
+        } else {
+            x.style.display = "none";
+        }
+    }
 </script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
