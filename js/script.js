@@ -88,9 +88,6 @@ collection.get().then(snapshot => {
 
 var vip = ["Richard", "richard", "Rich", "rich", "Hart", "hart"];
 var jimbob = ["jimmy", "jim"];
-// using a list of bad words to filter negative comments
-var badwords = ["bad", "negative", "no", "horrible", "terrible", "disgusting", "filter", "unforgivable", "nasty",
-    "no good", "shit", "fuck", "bitch", "josh", "Josh", "JOSH", "JoSh", "JOsH", "JosH"];
 
 
 
