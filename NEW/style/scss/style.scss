@@ -27,6 +27,7 @@ $secondary: #5dd28e;
   transition: all $transition ease;
 }
 
+// main page
 * {
   margin: 0;
   padding: 0;
@@ -181,12 +182,7 @@ body {
   }
 }
 
-#landing {
-  background-color: #23424f;
-  height: 50%;
-}
-
-/* The navigation menu links */
+// navbar
 .sidenav {
   height: 100%;
   width: 0;
@@ -218,4 +214,10 @@ body {
     font-size: 36px;
     margin-left: 50px;
   }
+}
+
+// particles.js ID
+#particles-js {
+  height: 100%;
+  width: 100%;
 }

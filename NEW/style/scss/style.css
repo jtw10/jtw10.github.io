@@ -9679,12 +9679,6 @@ body {
   }
 }
 
-#landing {
-  background-color: #23424f;
-  height: 50%;
-}
-
-/* The navigation menu links */
 .sidenav {
   height: 100%;
   width: 0;
@@ -9719,5 +9713,10 @@ body {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+#particles-js {
+  height: 100%;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
