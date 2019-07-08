@@ -1,19 +1,96 @@
-<!DOCTYPE html>>
-<html>
+<!DOCTYPE html>
 
-<head>
-    <meta charset="utf-8">
-    <title>Testing</title>
-    <link href="scss/style.css" rel="stylesheet">
-</head>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JOSHYWORLD.</title>
 
-<body>
-    <div id="main">
-        <a href="#" class="colorlib-nav-toggle"><i></i></a>
-        <aside id="colorilb-aside" role="complementary" class="js-full"
+    <link rel="stylesheet" href="./style/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./style/scss/style.css" />
+    <link rel="stylesheet" href="./style/css/hamburgers.css" />
+  </head>
+
+  <body>
+    <!-- navbar (default: inactive) -->
+    <div id="nav" class="sidenav">
+      <h3 style="color: white;">JOSHYWORLD.</h3>
+      <h6 style="color: #e9c2ad;">inspired by nancyworld</h6>
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Photography</a></li>
+        <li><a href="#">Photography</a></li>
+      </ul>
+      <div class="nav-footer">
+        <p>Connect with me on social media!</p>
+        <ul>
+          <li>
+            <a href="#"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+          </li>
+          <li>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
 
-
-</body>
-
+    <!-- all content inside the main div will be pushed right by the nav -->
+    <div id="main">
+      <!-- hamburger to open the nav -->
+      <div id="hamburger-shell">
+        <button class="hamburger hamburger--elastic" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+      <!-- hero image -->
+      <div class="hero flex-center">
+        <div class="hero-message">
+          <h1 class="hero-title">Jimbob</h1>
+          <h2 class="hero-sub-title">ALL Jimbobs have big brains!</h2>
+        </div>
+      </div>
+      <!-- content outside hero image -->
+      <div class="not-hero flex-center bg-info">
+        <div class="not-hero-mssage">
+          <h1 class="hero-title">Non-Hero section OwO</h1>
+          <h2 class="subheading">It doesn't matter how slowly you go</h2>
+          <h1 class="mb-4">...as long as you keep going</h1>
+          <p class="mb-4">
+            UwU with me<br />
+            &<br />
+            OwO with me
+          </p>
+          <p>
+            <a href="#" class="btn-custom">
+              More Memes With Me<span class="ion-ios-arrow-forward"></span>
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- scripts -->
+    <script src="https://kit.fontawesome.com/394f0c73ee.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
+
+<!--
+to-do:
+STYLE nav
+footer
+
+stuff to add:
+LIGHT/DARK/COLOR Modes
+particles?
+particles w/ scrollax?
+AOS stuff
+use jquery????
+scss ! mixins !
+-->

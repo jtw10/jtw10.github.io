@@ -1,8 +1,221 @@
-@import 'bootstrap/bootstrap';
-@import 'bootstrap/variables';
+@import "bootstrap/bootstrap";
+@import "bootstrap/variables";
 
-$font1:;
-$font2:;
+$font-primary: "Montserrat", Arial, sans-serif;
+$font-secondary: "Poppins", Arial, sans-serif;
 
-$color1:;
-$color2:;
+$background_color_1: #13051b;
+
+$white: #fff;
+$black: #000000;
+
+$primary: #f05d23;
+$secondary: #5dd28e;
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($transition) {
+  -moz-transition: all $transition ease;
+  -o-transition: all $transition ease;
+  -webkit-transition: all $transition ease;
+  -ms-transition: all $transition ease;
+  transition: all $transition ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+
+  &::before {
+    background-image: url(/images/iu4.jpg);
+    background-size: cover;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    opacity: 0.4;
+  }
+
+  &::after {
+    background-color: #563d7c;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+  }
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.hero-message {
+  color: #fff;
+  text-shadow: #343a40 2px 2px;
+  min-width: 100%;
+  min-height: 12em;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 0;
+    min-width: 100%;
+    min-height: 12em;
+    z-index: -1;
+    opacity: 0.4;
+    background-color: #343a40;
+  }
+}
+
+.hero-title,
+.hero-sub-title {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.hero-title {
+  margin: 3% 0;
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .hero-message {
+    min-width: 50%;
+    min-height: 12em;
+  }
+  .hero-message::before {
+    margin-left: 25%;
+    min-width: 50%;
+    min-height: 12em;
+  }
+}
+
+@media (min-width: 320px) {
+  .hero::before {
+    background-image: url(/images/iu4.jpg);
+  }
+}
+
+@media (min-width: 460px) {
+  .hero::before {
+    background-image: url(/images/iu4.jpg);
+  }
+}
+
+@media (min-width: 720px) {
+  .hero::before {
+    background-image: url(/images/iu4.jpg);
+  }
+}
+
+@media (min-width: 980px) {
+  .hero::before {
+    background-image: url(/images/iu4.jpg);
+  }
+}
+
+@media (min-width: 1240px) {
+  .hero::before {
+    background-image: url(/images/iu4.jpg);
+  }
+}
+
+@media (min-width: 1500px) {
+  .hero::before {
+    background-image: url(/images/iu4.jpg);
+  }
+}
+
+@media (min-width: 1760px) {
+  .hero::before {
+    background-image: url(/images/iu4.jpg);
+  }
+}
+
+#main {
+  height: 100vh;
+  transition: margin-left 0.5s;
+  padding: 0;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+#landing {
+  background-color: #23424f;
+  height: 50%;
+}
+
+/* The navigation menu links */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $background_color_1;
+  overflow-x: hidden;
+  padding-top: 60px;
+  @include transition(0.5s);
+
+  a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: $primary;
+    display: block;
+    transition: 0.3s;
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
