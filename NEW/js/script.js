@@ -28,7 +28,7 @@ function resize() {
     if (window.innerWidth > 975) {
         nav_open();
         document.getElementById("hamburger-shell").style.left = "3423500px";
-        console.log(hamburger.className);
+        // console.log(hamburger.className);
     }
     if (window.innerWidth < 975) {
         nav_close();
@@ -43,4 +43,14 @@ hamburger.addEventListener("click", function () {
     if (hamburger.className == "hamburger hamburger--elastic") {
         nav_close();
     }
+});
+
+// scroll animation 
+$(document).ready(function () {
+    $('.arrow').on('click', function () {
+        $('html, body').animate({
+            scrollTop: $('#p2').offset().top
+        }, 500);
+    });
+
 });

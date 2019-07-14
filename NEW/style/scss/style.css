@@ -4,7 +4,7 @@
  * Copyright 2011-2018 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
-@import url("https://fonts.googleapis.com/css?family=Raleway|Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Permanent+Marker|Viga&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -9517,6 +9517,24 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9524,16 +9542,25 @@ a.text-dark:hover, a.text-dark:focus {
 
 html,
 body {
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Viga", Arial, sans-serif;
+}
+
+p {
+  font-family: "Oxygen", Arial, sans-serif;
 }
 
 .hero {
-  width: 100vw;
-  height: 100vh;
-  min-width: 100vw;
-  min-height: 100vh;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
   position: relative;
+  font-family: "Viga", Arial, sans-serif;
 }
 
 .hero::before {
@@ -9610,6 +9637,12 @@ body {
   text-transform: uppercase;
 }
 
+.hero-sub-title {
+  font-family: "Permanent Marker", cursive;
+  -webkit-animation: fadeEffect 2s;
+  animation: fadeEffect 2s;
+}
+
 @media (min-width: 1024px) {
   .hero-message {
     min-width: 50%;
@@ -9680,6 +9713,72 @@ body {
   }
 }
 
+.arrow {
+  text-align: center;
+  margin: 2% 0;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.arrow a {
+  color: #fff;
+}
+
+.arrow a:visited {
+  text-decoration: none;
+}
+
+.arrow a:hover {
+  text-decoration: none;
+  color: hotpink;
+}
+
+.bounce {
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
+  }
+}
+
 .sidenav {
   height: 100%;
   width: 0;
@@ -9687,25 +9786,26 @@ body {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #13051b;
+  background-color: #fce5f6;
   overflow-x: hidden;
   padding-top: 60px;
+  text-align: center;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 8px;
   text-decoration: none;
-  font-size: 25px;
-  color: #f05d23;
+  font-weight: 300px;
+  color: #3515c4;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
 .sidenav a:hover {
-  color: #5dd28e;
+  color: #35b9a3;
 }
 
 .sidenav .closebtn {
@@ -9714,6 +9814,30 @@ body {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+}
+
+.navcenter {
+  text-align: center;
+  display: inline-block;
+}
+
+.navcenter ul {
+  list-style: none;
+}
+
+.navcenter a {
+  text-decoration: none;
+}
+
+#profilepic {
+  border-radius: 50%;
+  height: 175px;
+  width: 175px;
+}
+
+#socialmedia {
+  display: inline;
+  width: 100%;
 }
 
 #particles-js {
