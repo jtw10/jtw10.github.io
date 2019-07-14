@@ -9835,9 +9835,49 @@ p {
   width: 175px;
 }
 
-#socialmedia {
-  display: inline;
+#nav-inner {
+  text-align: center;
+  position: relative;
+  height: 100%;
   width: 100%;
+}
+
+#nav-footer {
+  position: absolute;
+  bottom: 7%;
+  width: 100%;
+}
+
+#connect {
+  position: absolute;
+  bottom: 5%;
+}
+
+#socialmedia {
+  text-align: center;
+}
+
+#socialmedia ul {
+  display: inline-block;
+  margin: 10px 0;
+  padding: 2px;
+}
+
+#socialmedia li {
+  display: inline-block;
+}
+
+#socialmedia li i {
+  display: inline-block;
+  padding: 5px;
+  text-decoration: none;
+}
+
+.horizontal-faded {
+  border: 0;
+  height: 1px;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
 #particles-js {

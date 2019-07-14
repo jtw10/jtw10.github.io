@@ -321,10 +321,52 @@ p {
   width: 175px;
 }
 
-// social media buttons in navbar
-#socialmedia {
-  display: inline;
+// pushing social media buttons in navbar to bottom
+#nav-inner {
+  text-align: center;
+  position: relative;
+  height: 100%;
   width: 100%;
+}
+
+#nav-footer {
+  position: absolute;
+  bottom: 7%;
+  width: 100%;
+}
+
+#connect {
+  position: absolute;
+  bottom: 5%;
+}
+
+#socialmedia {
+  text-align: center;
+  ul {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 2px;
+  }
+  li {
+    display: inline-block;
+    i {
+      display: inline-block;
+      padding: 5px;
+      text-decoration: none;
+    }
+  }
+}
+
+// style for hr
+.horizontal-faded {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
 }
 
 // particles.js ID
