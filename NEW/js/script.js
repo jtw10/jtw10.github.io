@@ -1,6 +1,7 @@
 // declaring variables
 var hamburger = document.querySelector(".hamburger");
 
+
 // open navbar
 function nav_open() {
     document.getElementById("nav").style.width = "250px";
@@ -45,12 +46,57 @@ hamburger.addEventListener("click", function () {
     }
 });
 
-// scroll animation 
+// scroll animation for arrow
 $(document).ready(function () {
+    $(document).on("scroll", onScroll);
     $('.arrow').on('click', function () {
         $('html, body').animate({
             scrollTop: $('#p2').offset().top
         }, 500);
     });
 
+    function onScroll(event) {
+        var scrollPos = $(document).scrollTop();
+        $('.navcenter a').each(function () {
+            var currLink = $(this);
+            var refElement = $(currLink.attr("href"));
+            if (refElement.position().top - 5 <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+                $('.navcenter ul li a').removeClass("active");
+                currLink.addClass("active");
+            } else {
+                currLink.removeClass("active");
+            }
+        });
+    }
+
+    function ScrollView(element) {
+        var win = $(window);
+        var winTop = win.scrollTop();
+        var winBottom = winTop + win.height();
+        var elementTop = element.offset().top;
+        var elementBottom = elementTop + element.height();
+
+        if ((elementBottom <= winBottom) && (elementTop >= winTop)) {
+            return true;
+        }
+        return false;
+    }
+});
+
+
+$(function () {
+    $('a[href*="#"]:not([href="#"])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                $('li a').removeClass('active');
+                $(this).addClass('active')
+                return false;
+            }
+        }
+    });
 });

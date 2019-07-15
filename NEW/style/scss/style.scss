@@ -289,8 +289,55 @@ p {
     color: $primary;
     display: block;
     transition: 0.3s;
+
     &:hover {
       color: $secondary;
+    }
+  }
+
+  .nav-links {
+    color: $primary;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    position: relative;
+    &:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+    &.active {
+      /*
+      color: $secondary;
+      width: 100%;
+      opacity: 1 !important;
+      left: 0%;
+      width: 75%;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      */
+      background: #fff;
+      width: 60%;
+      color: $secondary;
+    }
+  }
+
+  @media screen and (max-height: 300px) {
+    ul {
+      margin-top: 40px;
     }
   }
 
@@ -319,6 +366,7 @@ p {
   border-radius: 50%;
   height: 175px;
   width: 175px;
+  margin: 25px;
 }
 
 // pushing social media buttons in navbar to bottom
