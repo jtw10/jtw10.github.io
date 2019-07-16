@@ -100,3 +100,5 @@ $(function () {
         }
     });
 });
+
+// parallax scroll effect

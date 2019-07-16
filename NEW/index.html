@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./style/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./style/scss/style.css" />
     <link rel="stylesheet" href="./style/css/hamburgers.css" />
+    <link rel="stylesheet" href="./style/css/aos.css" />
   </head>
 
   <body>
@@ -83,69 +84,80 @@
       </div>
       <!-- content outside hero image -->
       <div class="not-hero flex-center bg-info" id="p2">
-        <div class="not-hero-mssage">
-          <h1 class="hero-title">Meet Josh section OwO</h1>
-          <h2 class="subheading">It doesn't matter how slowly you go</h2>
-          <h1 class="mb-4">...as long as you keep going</h1>
-          <p class="mb-4">
-            UwU with me<br />
-            &<br />
-            OwO with me
-          </p>
-          <p>
-            <a href="#" class="btn-custom">
-              More Memes With Me<span class="ion-ios-arrow-forward"></span>
-            </a>
-          </p>
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <div class="not-hero-mssage">
+            <h1 class="hero-title">Meet Josh section OwO</h1>
+            <h2 class="subheading">It doesn't matter how slowly you go</h2>
+            <h1 class="mb-4">...as long as you keep going</h1>
+            <p class="mb-4">
+              UwU with me<br />
+              &<br />
+              OwO with me
+            </p>
+            <p>
+              <a href="#" class="btn-custom">
+                More Memes With Me<span class="ion-ios-arrow-forward"></span>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
       <div class="not-hero flex-center bg-info" id="p3">
-        <div class="not-hero-mssage">
-          <h1 class="hero-title">Projects OwO</h1>
-          <h2 class="subheading">It doesn't matter how slowly you go</h2>
-          <h1 class="mb-4">...as long as you keep going</h1>
-          <p class="mb-4">
-            UwU with me<br />
-            &<br />
-            OwO with me
-          </p>
-          <p>
-            <a href="#" class="btn-custom">
-              More Memes With Me<span class="ion-ios-arrow-forward"></span>
-            </a>
-          </p>
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <div class="not-hero-mssage">
+            <h1 class="hero-title">Projects OwO</h1>
+            <h2 class="subheading">It doesn't matter how slowly you go</h2>
+            <h1 class="mb-4">...as long as you keep going</h1>
+            <p class="mb-4">
+              UwU with me<br />
+              &<br />
+              OwO with me
+            </p>
+            <p>
+              <a href="#" class="btn-custom">
+                More Memes With Me<span class="ion-ios-arrow-forward"></span>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
       <div class="not-hero flex-center bg-info" id="p4">
-        <div class="not-hero-mssage">
-          <h1 class="hero-title">Contact</h1>
-          <h2 class="subheading">It doesn't matter how slowly you go</h2>
-          <h1 class="mb-4">...as long as you keep going</h1>
-          <p class="mb-4">
-            UwU with me<br />
-            &<br />
-            OwO with me
-          </p>
-          <p>
-            <a href="#" class="btn-custom">
-              More Memes With Me<span class="ion-ios-arrow-forward"></span>
-            </a>
-          </p>
+        <div data-aos="fade-up" data-aos-duration="2000">
+          <div class="not-hero-mssage">
+            <h1 class="hero-title">Contact</h1>
+            <h2 class="subheading">It doesn't matter how slowly you go</h2>
+            <h1 class="mb-4">...as long as you keep going</h1>
+            <p class="mb-4">
+              UwU with me<br />
+              &<br />
+              OwO with me
+            </p>
+            <p>
+              <a href="#" class="btn-custom">
+                More Memes With Me<span class="ion-ios-arrow-forward"></span>
+              </a>
+            </p>
+          </div>
         </div>
       </div>
       <!-- footer -->
       <div id="particles-js" style="background-color: rgb(51, 9, 9);"></div>
     </div>
+
     <!-- scripts -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/394f0c73ee.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/aos.js"></script>
     <!--
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
     -->
     <script>
+      // initiating AOS
+      AOS.init();
+      // watching for window resizing
       window.onload = resize();
     </script>
   </body>
