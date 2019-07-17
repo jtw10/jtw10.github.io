@@ -101,4 +101,19 @@ $(function () {
     });
 });
 
+// changing hero image every 8 seconds
+function run(interval, frames) {
+    var bgcounter = 2;
+
+    function func() {
+        document.getElementById("p1").style.backgroundImage = "url(/images/bg" + bgcounter + ".jpg)";
+        bgcounter++;
+        if (bgcounter === frames) {
+            bgcounter = 1;
+        }
+    }
+
+    var swap = window.setInterval(func, interval);
+}
+
 // parallax scroll effect

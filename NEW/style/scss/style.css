@@ -9561,6 +9561,9 @@ p {
   min-height: 100%;
   position: relative;
   font-family: "Viga", Arial, sans-serif;
+  background-size: cover;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
 }
 
 .hero::before {
@@ -9571,13 +9574,11 @@ p {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url(/images/iu4.jpg);
   background-size: cover;
   z-index: -2;
 }
 
 .hero::after {
-  background-color: #563d7c;
   content: "";
   display: block;
   position: absolute;
@@ -9617,8 +9618,6 @@ p {
   display: block;
   position: absolute;
   margin-left: 0;
-  min-width: 100%;
-  min-height: 12em;
   z-index: -1;
   opacity: 0.4;
   background-color: #343a40;
@@ -9656,43 +9655,43 @@ p {
 
 @media (min-width: 320px) {
   .hero::before {
-    background-image: url(/images/iu4.jpg);
+    background-image: url(/images/bg1.jpg);
   }
 }
 
 @media (min-width: 460px) {
   .hero::before {
-    background-image: url(/images/iu4.jpg);
+    background-image: url(/images/bg1.jpg);
   }
 }
 
 @media (min-width: 720px) {
   .hero::before {
-    background-image: url(/images/iu4.jpg);
+    background-image: url(/images/bg1.jpg);
   }
 }
 
 @media (min-width: 980px) {
   .hero::before {
-    background-image: url(/images/iu4.jpg);
+    background-image: url(/images/bg1.jpg);
   }
 }
 
 @media (min-width: 1240px) {
   .hero::before {
-    background-image: url(/images/iu4.jpg);
+    background-image: url(/images/bg1.jpg);
   }
 }
 
 @media (min-width: 1500px) {
   .hero::before {
-    background-image: url(/images/iu4.jpg);
+    background-image: url(/images/bg1.jpg);
   }
 }
 
 @media (min-width: 1760px) {
   .hero::before {
-    background-image: url(/images/iu4.jpg);
+    background-image: url(/images/bg1.jpg);
   }
 }
 
@@ -9785,7 +9784,7 @@ p {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #fce5f6;
+  background-color: #d8e9f7;
   overflow-x: hidden;
   padding-top: 60px;
   text-align: center;

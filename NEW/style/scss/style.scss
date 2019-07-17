@@ -6,7 +6,7 @@ $font-primary: "Viga", Arial, sans-serif;
 $font-secondary: "Oxygen", Arial, sans-serif;
 $font-landing: "Permanent Marker", cursive;
 
-$background_color_1: #fce5f6;
+$background_color_1: #d8e9f7;
 
 $white: #fff;
 $black: #000000;
@@ -14,7 +14,7 @@ $black: #000000;
 $primary: #3515c4;
 $secondary: #35b9a3;
 
-$heroimage: url(/images/iu4.jpg);
+$heroimage: url(/images/bg1.jpg);
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -29,6 +29,14 @@ $heroimage: url(/images/iu4.jpg);
   -webkit-transition: all $transition ease;
   -ms-transition: all $transition ease;
   transition: all $transition ease;
+}
+
+@mixin herotransition($what: all, $time: 0.2s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  -o-transition: $what $time $how;
+  transition: $what $time $how;
 }
 
 @-webkit-keyframes fadeEffect {
@@ -80,6 +88,8 @@ p {
   min-height: 100%;
   position: relative;
   font-family: $font-primary;
+  background-size: cover;
+  @include transition;
 
   &::before {
     content: "";
@@ -89,13 +99,12 @@ p {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: $heroimage;
+    // background-image: $heroimage;
     background-size: cover;
     z-index: -2;
   }
 
   &::after {
-    background-color: #563d7c;
     content: "";
     display: block;
     position: absolute;
@@ -127,8 +136,7 @@ p {
     display: block;
     position: absolute;
     margin-left: 0;
-    min-width: 100%;
-    min-height: 12em;
+
     z-index: -1;
     opacity: 0.4;
     background-color: #343a40;
