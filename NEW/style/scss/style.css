@@ -9517,6 +9517,15 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 
+@-webkit-keyframes socialmediaglow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff, 0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff, 0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
 @-webkit-keyframes fadeEffect {
   from {
     opacity: 0;
@@ -9562,8 +9571,8 @@ p {
   position: relative;
   font-family: "Viga", Arial, sans-serif;
   background-size: cover;
-  -webkit-transition: all 1s ease-out;
-  transition: all 1s ease-out;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
 
 .hero::before {
@@ -9648,8 +9657,6 @@ p {
   }
   .hero-message::before {
     margin-left: 25%;
-    min-width: 50%;
-    min-height: 12em;
   }
 }
 
@@ -9915,10 +9922,29 @@ p {
   display: inline-block;
 }
 
+#socialmedia li a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  color: #socialmedia li a #3515c4;
+}
+
+#socialmedia li a:hover {
+  -webkit-animation: socialmediaglow 1.5s ease-in-out infinite alternate;
+  animation: socialmediaglow 1.5s ease-in-out infinite alternate;
+  color: #030f1b;
+}
+
 #socialmedia li i {
   display: inline-block;
   padding: 5px;
   text-decoration: none;
+}
+
+@media (max-width: 650px) {
+  #socialmedia .connect {
+    width: 100%;
+  }
 }
 
 .horizontal-faded {
@@ -9926,6 +9952,46 @@ p {
   height: 1px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0)));
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.pagecontent {
+  text-align: center;
+}
+
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top i {
+  color: #fff;
+  margin: 0;
+  position: relative;
+  left: 16px;
+  top: 13px;
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#return-to-top:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
 }
 
 .content {

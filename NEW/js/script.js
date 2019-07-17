@@ -116,4 +116,18 @@ function run(interval, frames) {
     var swap = window.setInterval(func, interval);
 }
 
+// scroll back to top
+$(window).scroll(function () {
+    if ($(this).scrollTop() >= 75) {
+        $('#return-to-top').fadeIn(300);
+    } else {
+        $('#return-to-top').fadeOut(300);
+    }
+});
+$('#return-to-top').click(function () {
+    $('body,html').animate({
+        scrollTop: 0
+    }, 500);
+});
+
 // parallax scroll effect

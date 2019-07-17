@@ -32,11 +32,21 @@ $heroimage: url(/images/bg1.jpg);
 }
 
 @mixin herotransition($what: all, $time: 0.2s, $how: ease-in-out) {
-  -webkit-transition: $what $time $how;
-  -moz-transition: $what $time $how;
-  -ms-transition: $what $time $how;
-  -o-transition: $what $time $how;
-  transition: $what $time $how;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@-webkit-keyframes socialmediaglow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
 }
 
 @-webkit-keyframes fadeEffect {
@@ -47,6 +57,7 @@ $heroimage: url(/images/bg1.jpg);
     opacity: 1;
   }
 }
+
 @keyframes fadeEffect {
   from {
     opacity: 0;
@@ -89,7 +100,7 @@ p {
   position: relative;
   font-family: $font-primary;
   background-size: cover;
-  @include transition;
+  @include herotransition(all, 2s, ease-out);
 
   &::before {
     content: "";
@@ -168,8 +179,6 @@ p {
   }
   .hero-message::before {
     margin-left: 25%;
-    min-width: 50%;
-    min-height: 12em;
   }
 }
 
@@ -404,10 +413,27 @@ p {
   }
   li {
     display: inline-block;
+    a {
+      text-decoration: none;
+      transition: all 0.5s;
+      color: &$primary;
+
+      &:hover {
+        -webkit-animation: socialmediaglow 1.5s ease-in-out infinite alternate;
+        animation: socialmediaglow 1.5s ease-in-out infinite alternate;
+        color: #030f1b;
+      }
+    }
     i {
       display: inline-block;
       padding: 5px;
       text-decoration: none;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .connect {
+      width: 100%;
     }
   }
 }
@@ -422,6 +448,52 @@ p {
     rgba(0, 0, 0, 0.75),
     rgba(0, 0, 0, 0)
   );
+}
+
+// page content
+.pagecontent {
+  text-align: center;
+}
+
+// back to top arrow
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  &:hover i {
+    color: #fff;
+    top: 5px;
+  }
 }
 
 // parallax effect
