@@ -1,0 +1,371 @@
+p {
+    color: whitesmoke;
+}
+
+p:hover {
+    cursor: default;
+}
+
+#landingbg {
+    background-image: url("../images/josh.jpg");
+    opacity: 0.7;
+    background-position: center;
+}
+
+#landing {
+    background-image: url("../images/coffeecode2.jpg");
+}
+
+#nature {
+    background-image: url("https://images.pexels.com/photos/459225/pexels-photo-459225.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+#landingcard {
+    background: #cccccc;
+    opacity: 0.9;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 2%;
+    padding-bottom: 3%;
+    border-radius: 5%;
+    margin-bottom: 35%;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #555554;
+    height: 100%;
+}
+
+div.text {
+    border: 3px solid cornflowerblue;
+    margin: 10%;
+    padding: 10px;
+}
+
+div.container {
+    background-color: #939393;
+}
+
+#gettall {
+    height: 500%;
+}
+
+div.containerfeedback {
+    background-color: #939393;
+    height: 500%;
+}
+
+div.card {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 2%;
+    margin-top: 2%;
+    background-color: #797979;
+}
+
+div.col-md-10 {
+    margin: 1%;
+    padding: 1%;
+}
+
+.navbar-nav {
+    margin-right: 0;
+    color: #343a40;
+}
+
+.navbar-nav li {
+    text-align: center;
+    border-radius: 4px;
+    color: #2a4068;
+    cursor: pointer;
+}
+
+.navbar-nav li:hover {
+    background-color: #99b1d7;
+    color: #2a4068;
+}
+
+.carousel-inner > .item > img {
+    margin: 0 auto;
+}
+
+.thumbnail {
+
+}
+
+/* footer flush to bottom */
+footer {
+    z-index: 1111; /* this keeps my footer on top of other elements when scrolling */
+    background-color: #343a40;
+    color: #868e96;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 65px;
+}
+
+#wrap
+{
+    min-height: 100%;
+}
+
+#main
+{
+    overflow:auto;
+    padding-bottom:150px; /* this needs to be bigger than footer height*/
+}
+
+
+/*
+* {
+    box-sizing: border-box;
+}
+*/
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #393939;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #444444;
+}
+
+/* Style the container/contact section */
+.container {
+    margin-top: 1%;
+    border-radius: 20px;
+    background-color: #939393;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Create two columns that float next to each other for the contact me box */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide the two columns will stack on top of each */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+.btn:focus, .btn:active, button:focus, button:active {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#image-gallery .modal-footer {
+    display: block;
+}
+
+.thumb {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.gallery-block {
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+
+.gallery-block .heading {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.gallery-block .heading h2 {
+    font-weight: bold;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+}
+
+.gallery-block.compact-gallery .item {
+    overflow: hidden;
+    margin-bottom: 0;
+    background: black;
+    opacity: 1;
+}
+
+.gallery-block.compact-gallery .item .image {
+    transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item .info {
+    position: relative;
+    display: inline-block;
+}
+
+.gallery-block.compact-gallery .item .description {
+    display: grid;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #fff;
+    font-size: 17px;
+    line-height: 18px;
+    width: 100%;
+    padding: 15px 10px;
+    opacity: 1;
+    transition: 0.8s ease;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+}
+
+.gallery-block.compact-gallery .item .description .description-heading {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.gallery-block.compact-gallery .item .description .description-body {
+    font-size: 0.8em;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+@media (min-width: 576px) {
+
+    .gallery-block.compact-gallery .item .description {
+        opacity: 0;
+    }
+
+    .gallery-block.compact-gallery .item a:hover .description {
+        opacity: 1;
+    }
+
+    .gallery-block .zoom-on-hover:hover .image {
+        transform: scale(1.3);
+        opacity: 0.7;
+    }
+}
+
+.lightbox img {
+    width: 100%;
+    transition: .2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,.2);
+    max-height: 198px;
+    object-fit: cover;
+}
+
+.pagetabs {
+    background-color: #343a40;
+    border-style: none;
+    border-color: #343a40;
+    border-width: thick;
+    margin: 0;
+    color: whitesmoke;
+    padding: 12px;
+}
+
+.pagetabs a {
+    text-decoration: none;
+}
+
+.pagetabs a:hover {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: #99b1d7;
+    color: #2a4068;
+    cursor: pointer;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 50%;
+}
+
+.embed-responsive embed-responsive-4by3 {
+    left: 50%;
+}
+
+.table {
+    margin: auto;
+    width: 50% !important;
+}
+
+table th {
+    text-align: center;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #2a4068; /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #2a4068;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+div.centeredbox {
+    left: 50%;
+    padding-left: 42%;
+    padding-right: 42%;
+}
+
+div.formbox {
+    left: 50%;
+    padding-left: 20%;
+    padding-right: 20%;
+}

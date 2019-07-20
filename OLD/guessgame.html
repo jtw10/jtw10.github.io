@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Guess Game!</title>
+</head>
+<body id="landing">
+
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Josh-W Designs</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item dropdown active">
+                <a class="nav-link dropdown-toggle" href="projects.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <a class="dropdown-item" href="python.html">Python</a>
+                    <a class="dropdown-item" href="database.html">Database</a>
+                    <a class="dropdown-item" href="webdev.html">Web Development</a>
+                    <a class="dropdown-item" href="photography.html">Photography</a>
+                    <a class="dropdown-item" href="guessgame.html">Guess Game</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="hobbies.html" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Hobbies
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                    <a class="dropdown-item" href="ulti.html">Ultimate Frisbee</a>
+                    <a class="dropdown-item" href="fanclubs.html">Fanclubs</a>
+                    <a class="dropdown-item" href="games.html">Games</a>
+                    <a class="dropdown-item" href="shows.html">Shows</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="aboutme.html">All About Josh</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">More Coming Soon!</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contactme.html">Contact Me</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<br><br>
+
+<div class="container">
+    <br>
+    <h1 class="display-4" style="text-align: center">Guessing Game</h1>
+    <hr class="divider my-4">
+    <ul class="nav nav-pills list-inline justify-content-center">
+        <li class="pagetabs">
+            <a data-toggle="pill" href="#game" style="color: whitesmoke">The Game</a>
+        </li>
+        <li class="pagetabs">
+            <a data-toggle="pill" href="#highscores" style="color: whitesmoke">The High Scores</a>
+        </li>
+    </ul>
+    <hr class="divider my-4">
+    <div class="tab-content">
+        <div id="game" class="tab-pane fade show active">
+            <div class="container">
+                <div class="formbox">
+                    <h3 style="text-align: center">How Many Tries Will You Take?</h3>
+                    <p class="lead" style="text-align: center; padding: 10px;">
+                        I will generate a completely random number between 1-1000. But there is a twist! <strong>Higher means
+                        lower and lower means higher</strong>. Will you get the right number and make it onto the high scores?
+                        Good luck! May the lucky win!
+                    </p>
+                </div>
+                <div class="container">
+                    <input style="margin: auto; display: block; padding: 12px" type="number" id="userguess" min="1" max="1000" name="guessbox" placeholder="Enter Your Guess!">
+                    <div class="centeredbox">
+                        <button style="margin-top: 20px;" type="button" class="btn-primary btn-lg btn-block" onclick="guessme()">Submit Guess</button>
+                        <button style="margin-top: 20px;" type="button" class="btn-primary btn-lg btn-block" onclick="reloadPage()">Play Again!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="highscores" class="tab-pane fade">
+            <div class="container">
+                <h3 style="text-align: center">Hall of Fame</h3>
+                <div class="table-responsive table-bordered table-striped text-center">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><p id="firstname">---</p></td>
+                                <td><p id="firstscore">---</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td><p id="secondname">---</p></td>
+                                <td><p id="secondscore">---</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td><p id="thirdname">---</p></td>
+                                <td><p id="thirdscore">---</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td><p id="fourthname">---</p></td>
+                                <td><p id="fourthscore">---</p></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td><p id="fifthname">---</p></td>
+                                <td><p id="fifthscore">---</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr class="divider my-4">
+    <div class="container">
+        <div class="centeredbox">
+            <h3>Report Issue</h3>
+            <br>
+        </div>
+        <div class="formbox">
+            <form>
+                <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
+                    <small id="emailHelp" class="form-text text-muted">Josh will never share your email with anyone else, and he will get back to you ASAP.</small>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="What can I help you with?">
+                </div>
+
+                <div class="form-check">
+                    <div class="centeredbox">
+                        <button type="submit" style="margin-top: 20px;" class="btn-primary btn-lg btn-block">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <br>
+        </div>
+    </div>
+</div>
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div class="modal-body">
+            <h3 style="color: whitesmoke; text-align: center">Let's see if you made it to the high scores!</h3>
+            <p class="lead" style="text-align: center; padding: 10px;">
+                Submit your name or press 'X' to close this.
+            </p>
+            <form method="post" action="#" id="scorecard">
+                <input type="text" id="winnername" name="winnername" placeholder="Your Name" style="margin-bottom: 1px; height: 50px;" required>
+                <button type="button" class="btn btn-primary" id="submit" onclick="addScore()" style="margin-top: 5px">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<!--footer-->
+<footer class="page-footer font-small blue">
+    <div class="footer-copyright text-center py-3">© 2019 Copyright:
+        <a style="color: whitesmoke">Josh-W Designs</a>
+    </div>
+</footer>
+
+
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.9.2/firebase-firestore.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyByD0xxOis0-3UEToV8bJdDdcSuNJlqNzQ",
+        authDomain: "guessgame-8fb19.firebaseapp.com",
+        databaseURL: "https://guessgame-8fb19.firebaseio.com",
+        projectId: "guessgame-8fb19",
+        storageBucket: "",
+        messagingSenderId: "1055218122451"
+    };
+    firebase.initializeApp(config);
+</script>
+<script>
+    var db = firebase.firestore();
+
+    var x = Math.floor(Math.random() * (1000) + 1);
+    console.log(x);
+
+    var modal = document.getElementById('myModal');
+
+    var btn = document.getElementById("myBtn");
+
+    var span = document.getElementsByClassName("close")[0];
+
+    var counter = 0;
+    console.log(counter);
+
+    var highscores = {}; // store high scores
+
+
+
+    span.onclick = function() {
+        modal.style.display = "none";
+        reloadPage();
+    };
+
+    function guessme(){
+        var guessed = document.getElementById("userguess").value;
+        console.log(guessed);
+        if (guessed < x) {
+            alert('Wrong! The number is LOWER');
+            counter += 1;
+            console.log(counter);
+        } else if (guessed > x) {
+            alert('Wrong! The number is HIGHER');
+            counter += 1;
+            console.log(counter);
+        } else {
+            modal.style.display = "block";
+            counter += 1;
+            console.log(counter);
+            alert('You got it in ' + counter + ' guess(es)!')
+        }
+    }
+
+    function addScore(){
+        var name = document.getElementById("winnername").value;
+        var score = counter;
+        score = 10001 - score;
+        console.log(name, score);
+
+        db.collection("scores").add({
+            name: name,
+            score: score,
+        })
+            .then(function(docRef) {
+                console.log("Document written with ID: ", docRef.id);
+            })
+            .catch(function(error) {
+                console.error("Error adding comment: ", error);
+            });
+    }
+
+    const scores = db.collection('scores');
+    var sortscores = []; // put keys & value into array to sort
+    var sorted = []; // sorted list
+    scores.get().then(snapshot => {
+        snapshot.forEach(doc => {
+            // console.log( doc.data().name );
+            // console.log( doc.data().score );
+            var dbo = Object.assign({ uid: doc.id }, doc.data());
+
+            var username = dbo.name;
+            var userscore = dbo.score;
+
+            // console.log(username);
+            // console.log(userscore);
+
+            highscores[username] = userscore;
+            console.log(highscores);
+        });
+        for (var score in highscores){
+            sortscores.push([score, highscores[score]]);
+        }
+        sortscores.sort(function(a, b){
+            return a[1] - b[1];
+        });
+        // console.log(sortscores);
+
+        sorted = sortscores.reverse();
+
+        // console.log(sorted);
+
+        document.getElementById("firstname").innerHTML = sorted[0][0];
+        document.getElementById("firstscore").innerHTML = highscores[sorted[0][0]];
+        document.getElementById("secondname").innerHTML = sorted[1][0];
+        document.getElementById("secondscore").innerHTML = highscores[sorted[1][0]];
+        document.getElementById("thirdname").innerHTML = sorted[2][0];
+        document.getElementById("thirdscore").innerHTML = highscores[sorted[2][0]];
+        document.getElementById("fourthname").innerHTML = sorted[3][0];
+        document.getElementById("fourthscore").innerHTML = highscores[sorted[3][0]];
+        document.getElementById("fifthname").innerHTML = sorted[4][0];
+        document.getElementById("fifthscore").innerHTML = highscores[sorted[4][0]];
+    });
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

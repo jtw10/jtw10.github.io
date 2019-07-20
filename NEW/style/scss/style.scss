@@ -1,0 +1,514 @@
+@import "bootstrap/bootstrap";
+@import "bootstrap/variables";
+@import url("https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Permanent+Marker|Viga&display=swap");
+
+$font-primary: "Viga", Arial, sans-serif;
+$font-secondary: "Oxygen", Arial, sans-serif;
+$font-landing: "Permanent Marker", cursive;
+
+$background_color_1: #d8e9f7;
+
+$white: #fff;
+$black: #000000;
+
+$primary: #3515c4;
+$secondary: #35b9a3;
+
+$heroimage: url(/images/bg1.jpg);
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($transition) {
+  -moz-transition: all $transition ease;
+  -o-transition: all $transition ease;
+  -webkit-transition: all $transition ease;
+  -ms-transition: all $transition ease;
+  transition: all $transition ease;
+}
+
+@mixin herotransition($what: all, $time: 0.2s, $how: ease-in-out) {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+@-webkit-keyframes socialmediaglow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #228dff,
+      0 0 70px #228dff, 0 0 80px #228dff, 0 0 100px #228dff, 0 0 150px #228dff;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #228dff,
+      0 0 35px #228dff, 0 0 40px #228dff, 0 0 50px #228dff, 0 0 75px #228dff;
+  }
+}
+
+@-webkit-keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+// main page
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-primary;
+}
+
+p {
+  font-family: $font-secondary;
+}
+
+.hero {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  font-family: $font-primary;
+  background-size: cover;
+  @include herotransition(all, 2s, ease-out);
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    // background-image: $heroimage;
+    background-size: cover;
+    z-index: -2;
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+  }
+}
+
+.flex-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.hero-message {
+  color: #fff;
+  text-shadow: #343a40 2px 2px;
+  min-width: 100%;
+  min-height: 12em;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-left: 0;
+
+    z-index: -1;
+    opacity: 0.4;
+    background-color: #343a40;
+  }
+}
+
+.hero-title,
+.hero-sub-title {
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+.hero-title {
+  margin: 3% 0;
+  text-transform: uppercase;
+}
+
+.hero-sub-title {
+  font-family: $font-landing;
+  -webkit-animation: fadeEffect 2s;
+  animation: fadeEffect 2s;
+}
+
+@media (min-width: 1024px) {
+  .hero-message {
+    min-width: 50%;
+    min-height: 12em;
+  }
+  .hero-message::before {
+    margin-left: 25%;
+  }
+}
+
+@media (min-width: 320px) {
+  .hero::before {
+    background-image: $heroimage;
+  }
+}
+
+@media (min-width: 460px) {
+  .hero::before {
+    background-image: $heroimage;
+  }
+}
+
+@media (min-width: 720px) {
+  .hero::before {
+    background-image: $heroimage;
+  }
+}
+
+@media (min-width: 980px) {
+  .hero::before {
+    background-image: $heroimage;
+  }
+}
+
+@media (min-width: 1240px) {
+  .hero::before {
+    background-image: $heroimage;
+  }
+}
+
+@media (min-width: 1500px) {
+  .hero::before {
+    background-image: $heroimage;
+  }
+}
+
+@media (min-width: 1760px) {
+  .hero::before {
+    background-image: $heroimage;
+  }
+}
+
+#main {
+  height: 100vh;
+  transition: margin-left 0.5s;
+  padding: 0;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+
+    a {
+      font-size: 18px;
+    }
+  }
+}
+
+// down arrow
+.arrow {
+  text-align: center;
+  margin: 2% 0;
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+
+  a {
+    color: $white;
+    &:visited {
+      text-decoration: none;
+    }
+    &:hover {
+      text-decoration: none;
+      color: hotpink;
+    }
+  }
+}
+
+// bouncing animation for down arrow
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+// navbar
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $background_color_1;
+  overflow-x: hidden;
+  padding-top: 60px;
+  text-align: center;
+  @include transition(0.5s);
+
+  a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-weight: 300px;
+    color: $primary;
+    display: block;
+    transition: 0.3s;
+
+    &:hover {
+      color: $secondary;
+    }
+  }
+
+  .nav-links {
+    color: $primary;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+
+    display: inline-block;
+    position: relative;
+    &:after {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      left: 50%;
+      position: absolute;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    &:hover:after {
+      width: 100%;
+      left: 0;
+    }
+    &.active {
+      /*
+      color: $secondary;
+      width: 100%;
+      opacity: 1 !important;
+      left: 0%;
+      width: 75%;
+      background: #fff;
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      */
+      background: #fff;
+      width: 60%;
+      color: $secondary;
+    }
+  }
+
+  @media screen and (max-height: 300px) {
+    ul {
+      margin-top: 40px;
+    }
+  }
+
+  .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+}
+
+.navcenter {
+  text-align: center;
+  display: inline-block;
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+// profile picture in navbar
+#profilepic {
+  border-radius: 50%;
+  height: 175px;
+  width: 175px;
+  margin: 25px;
+}
+
+// pushing social media buttons in navbar to bottom
+#nav-inner {
+  text-align: center;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+#nav-footer {
+  position: absolute;
+  bottom: 7%;
+  width: 100%;
+}
+
+#connect {
+  position: absolute;
+  bottom: 5%;
+}
+
+#socialmedia {
+  text-align: center;
+  ul {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 2px;
+  }
+  li {
+    display: inline-block;
+    a {
+      text-decoration: none;
+      transition: all 0.5s;
+      color: &$primary;
+
+      &:hover {
+        -webkit-animation: socialmediaglow 1.5s ease-in-out infinite alternate;
+        animation: socialmediaglow 1.5s ease-in-out infinite alternate;
+        color: #030f1b;
+      }
+    }
+    i {
+      display: inline-block;
+      padding: 5px;
+      text-decoration: none;
+    }
+  }
+
+  @media (max-width: 650px) {
+    .connect {
+      width: 100%;
+    }
+  }
+}
+
+// style for hr
+.horizontal-faded {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+// page content
+.pagecontent {
+  text-align: center;
+}
+
+// back to top arrow
+#return-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
+  display: none;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  &:hover {
+    background: rgba(0, 0, 0, 0.7);
+  }
+  &:hover i {
+    color: #fff;
+    top: 5px;
+  }
+}
+
+// parallax effect
+.content {
+  position: absolute;
+  z-index: 1000;
+  top: 80vh;
+
+  background: rgb(44, 123, 153);
+  height: 100%;
+  width: 100%;
+}
+
+// particles.js ID
+#particles-js {
+  height: 100%;
+  width: 100%;
+}
