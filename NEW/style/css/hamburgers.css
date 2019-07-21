@@ -81,7 +81,7 @@
 
 #hamburger-shell {
     margin: 0;
-    position: fixed;
+    position: fixed !important;
     overflow: hidden;
     width: 70px;
     height: 100px;
