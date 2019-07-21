@@ -9843,6 +9843,15 @@ p {
       transition: width 0.3s ease 0s, left 0.3s ease 0s;
       */
   background: #fff;
+  /*
+      border-color: $white;
+      border-top: 0px;
+      border-left: 0px;
+      border-right: 0px;
+      border-bottom: 2px $white;
+      border-style: solid;
+      border-width: inherit;
+      */
   width: 60%;
   color: #35b9a3;
 }
@@ -9892,6 +9901,10 @@ p {
   position: absolute;
   bottom: 7%;
   width: 100%;
+}
+
+#nav-footer .connect p {
+  color: #9aa7c7;
 }
 
 #connect {
@@ -10067,7 +10080,7 @@ p {
 }
 
 #contact h3 {
-  color: #09bac0;
+  color: #35b9a3;
   display: block;
   font-size: 30px;
   font-weight: 400;
@@ -10675,7 +10688,7 @@ svg#bigTriangleColor {
   display: flex;
 }
 
-ul.share {
+.center ul.share {
   position: relative;
   margin: 0;
   padding: 0;
@@ -10687,35 +10700,13 @@ ul.share {
   height: 60px;
 }
 
-ul.share::before {
-  content: "\f1e0";
-  font-family: "Font Awesome\ 5 Free";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #8400ff, #c32be2);
-  border-radius: 30px;
-  text-align: center;
-  line-height: 60px;
-  color: #fff;
-  font-size: 30px;
-  padding-left: 2px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  z-index: 1;
-}
-
-ul.share:hover::before {
-  width: 60px;
-}
-
-ul.share li {
+.center ul.share li {
   position: absolute;
   -webkit-transition: 1s;
   transition: 1s;
 }
 
-ul.share li a {
+.center ul.share li a {
   display: block;
   width: 60px;
   height: 60px;
@@ -10732,59 +10723,81 @@ ul.share li a {
   transition: 0.5s;
 }
 
-ul.share li:nth-child(1) a {
-  background-color: #3b5999;
+.center ul.share li:nth-child(1) a {
+  background-color: #25d366;
 }
 
-ul.share li:nth-child(2) a {
+.center ul.share li:nth-child(2) a {
+  background-color: #3c5a99;
+}
+
+.center ul.share li:nth-child(3) a {
   background-color: #55acee;
 }
 
-ul.share li:nth-child(3) a {
-  background-color: #dd4b39;
-}
-
-ul.share li:nth-child(4) a {
+.center ul.share li:nth-child(4) a {
   background-color: #0077b5;
 }
 
-ul.share li:nth-child(5) a {
+.center ul.share li:nth-child(5) a {
   background-color: #e4405f;
 }
 
-ul.share:hover li:nth-child(1) a {
+.center ul.share:hover::before {
+  width: 60px;
+}
+
+.center ul.share:hover li:nth-child(1) a {
   -webkit-transform: translatex(68px) rotate(360deg);
           transform: translatex(68px) rotate(360deg);
   -webkit-transition-delay: 0.8s;
           transition-delay: 0.8s;
 }
 
-ul.share:hover li:nth-child(2) a {
+.center ul.share:hover li:nth-child(2) a {
   -webkit-transform: translatex(136px) rotate(360deg);
           transform: translatex(136px) rotate(360deg);
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
 
-ul.share:hover li:nth-child(3) a {
+.center ul.share:hover li:nth-child(3) a {
   -webkit-transform: translatex(204px) rotate(360deg);
           transform: translatex(204px) rotate(360deg);
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
 
-ul.share:hover li:nth-child(4) a {
+.center ul.share:hover li:nth-child(4) a {
   -webkit-transform: translatex(272px) rotate(360deg);
           transform: translatex(272px) rotate(360deg);
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
 
-ul.share:hover li:nth-child(5) a {
+.center ul.share:hover li:nth-child(5) a {
   -webkit-transform: translatex(340px) rotate(360deg);
           transform: translatex(340px) rotate(360deg);
   -webkit-transition-delay: 0s;
           transition-delay: 0s;
+}
+
+.center ul.share::before {
+  content: "\f1e0";
+  font-family: "Font Awesome\ 5 Free";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #8400ff, #c32be2);
+  border-radius: 30px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 30px;
+  padding-left: 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 1;
 }
 
 .slant {
