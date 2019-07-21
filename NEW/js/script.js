@@ -229,3 +229,13 @@ function quoterandomizer() {
   var randomquote = Math.floor(Math.random() * quotes.length);
   document.getElementById("textquote").innerHTML = quotes[randomquote];
 }
+
+// slider for projects section
+$(".slider__item").on("mouseover", function() {
+  $(".slider__item").removeClass("active");
+  $(this).addClass("active");
+});
+$(".slider__item").on("mouseout", function() {
+  $(".slider__item").removeClass("active");
+  $(this).addClass("");
+});
