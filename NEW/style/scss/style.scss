@@ -1349,6 +1349,8 @@ svg#bigTriangleColor {
 }
 
 .slider {
+  font-family: $font-secondary;
+
   h1,
   h2,
   h3,
@@ -1357,7 +1359,11 @@ svg#bigTriangleColor {
   h6 {
     font-family: $font-primary;
   }
-  font-family: $font-secondary;
+
+  ul,
+  li {
+    text-decoration: none;
+  }
 
   $item: &;
   background: transparent;
@@ -1420,6 +1426,10 @@ svg#bigTriangleColor {
     background: rgba(#ffffff, 0.9);
     padding: 10px;
     opacity: 0;
+    height: 90%;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
   }
   &__img-aboutright {
     background-image: url("/images/iu4.jpg");
@@ -1444,6 +1454,18 @@ svg#bigTriangleColor {
     background: rgba(#ffffff, 0.9);
     padding: 10px;
     opacity: 0;
+  }
+}
+
+.aboutlist {
+  list-style-type: none;
+  font-size: 2vw;
+
+  h2 {
+    font-size: 3.5vw;
+  }
+  h3 {
+    font-size: 3vw;
   }
 }
 

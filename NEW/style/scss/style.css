@@ -10855,6 +10855,11 @@ svg#bigTriangleColor {
   font-family: "Viga", Arial, sans-serif;
 }
 
+.slider ul,
+.slider li {
+  text-decoration: none;
+}
+
 .slider__item {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -10932,6 +10937,14 @@ svg#bigTriangleColor {
   background: rgba(255, 255, 255, 0.9);
   padding: 10px;
   opacity: 0;
+  height: 90%;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .slider__img-aboutright {
@@ -10965,6 +10978,19 @@ svg#bigTriangleColor {
   background: rgba(255, 255, 255, 0.9);
   padding: 10px;
   opacity: 0;
+}
+
+.aboutlist {
+  list-style-type: none;
+  font-size: 2vw;
+}
+
+.aboutlist h2 {
+  font-size: 3.5vw;
+}
+
+.aboutlist h3 {
+  font-size: 3vw;
 }
 
 div.project {
