@@ -239,3 +239,5 @@ $(".slider__item").on("mouseout", function() {
   $(".slider__item").removeClass("active");
   $(this).addClass("");
 });
+
+// project section
