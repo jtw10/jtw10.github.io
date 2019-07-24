@@ -236,12 +236,21 @@ function quoterandomizer() {
 $(".slider__item").on("mouseover", function() {
   $(".slider__item").removeClass("active");
   $(this).addClass("active");
-  $("#titleleft").fadeOut();
 });
 $(".slider__item").on("mouseout", function() {
   $(".slider__item").removeClass("active");
   $(this).addClass("");
+});
+
+// using mouseenter/leave to avoid conflict mouseover/out with child elements
+$(".slider__item").on("mouseenter", function() {
+  $("#titleleft").fadeOut(750);
+  $("#titleright").fadeOut(750);
+});
+
+$(".slider__item").on("mouseleave", function() {
   $("#titleleft").fadeIn();
+  $("#titleright").fadeIn();
 });
 
 // project section
