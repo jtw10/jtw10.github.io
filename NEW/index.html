@@ -75,11 +75,6 @@
         </h2>
         <!-- 
           <h2 class="hero-sub-title">
-            <p style="font-weight: 300px;">
-              <a href="https://joshboards.herokuapp.com"
-                >Visit my discussion boards.</a
-              >
-            </p>
           </h2>
           -->
       </div>
@@ -98,14 +93,15 @@
         <div class="aboutwrapper">
           <div class="slider">
             <div class="slider__item">
-              <div class="slider__img-aboutleft">
-                <div class="slider__textg"><span class="bigtitle">Technical Skills</span>
-                  <hr class="horizontal-faded">
+              <div class="slider__img-aboutleft">              
+                <span class="bigtitle_left" id="titleleft">Technical Skills:</span>
+                <div class="slider__textleft">
                   <ul class="aboutlist">
-                    <h2>Programming Language</h2>
+                    <h3>Programming Language</h3>
                     <li>Python</li>
                     <h3>Web Technologies & Frameworks</h3>
                     <li>HTML5</li>
+                    <li>Bootstrap 4</li>
                     <li>CSS3</li>
                     <li>SASS</li>
                     <li>Node.js</li>
@@ -115,7 +111,8 @@
                     <h3>Database</h3>
                     <li>Transact SQL</li>
                     <li>Firebase</li>
-                    <h3>Versioning</h3>
+                    <h3>Deployment & Versioning</h3>
+                    <li>Heroku</li>
                     <li>Git</li>
                   </ul>
                 </div>
@@ -123,15 +120,25 @@
             </div>
             <div class="slider__item">
               <div class="slider__img-aboutright">
-                <div class="slider__textd"><span class="bigtitle">Hobbies</span>
-                  <h3></h3>
+                <span class="bigtitle_right" id="titleright">Hobbies:</span>
+                <div class="slider__textright">
+                  <h3>
+                    In my free time I enjoy exploring the mountains, 
+                    playing sports in recreational leagues, 
+                    consuming delicious food, 
+                    and keeping up with the latest technology.
+                  </h3>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
+
     </div>
+
+
 
     <!-- projects section -->
     <div class="not-hero flex-center bg-info" id="p3">
@@ -145,15 +152,35 @@
           <section>        
             <h3>Django Forums</h3>
           </section>
-          <aside>Content & Stuff</aside>
+          <aside>
+            <p>
+              A dynamic web application created using Django and deployed on Heroku. 
+              Feel free to create an account and join in on the discussion!
+            </p>            
+            <p>
+              <a href="https://joshboards.herokuapp.com">
+                Visit my discussion boards.
+              </a>
+            </p>
+          </aside>
         </div>
         
         <!-- project 2 -->
         <div class="project">
-          <section class="section_alt">
+          <section>
               <h3>Instagram Bot</h3>
           </section>
-          <aside class="aside_alt">Content & Stuff</aside>
+          <aside>
+            <p>
+              Using Python and Selenium, this program can take care of your Instagram account for you.
+              Like and comment on posts, follow other users, and track your account's growth!
+            </p>
+            <p>
+              <a href="https://github.com/jtw10/ig-bot">
+                Github Repository
+              </a>
+            </p>
+          </aside>
         </div>
 
         <!-- project 3 -->
@@ -161,9 +188,17 @@
           <section>
             <h3>Node Project</h3>
           </section>
-          <aside>Content & Stuff</aside>
+          <aside>
+            <p>
+              Coming soon to a website near you!
+            </p>
+            <p>
+              <a href="#">
+                Github Repository
+              </a>
+            </p>
+          </aside>
         </div>
-
       </div>
     </div>
     <!-- contact me section -->
@@ -174,7 +209,7 @@
             <form id="contact" action="https://formspree.io/acit2911jimbob@gmail.com" method="POST">
               <div class="formspacing">
                 <h3>Contact Josh</h3>
-                <h4>Please feel free to leave a message!</h4>
+                <h4>Please leave me a message!</h4>
               </div>
               <div class="formspacing">
                 <input type="name" name="name" placeholder="Name" required />
@@ -258,15 +293,14 @@
 
 <!--
 to-do:
-project vignette images, text
+project vignette & images
 about me >> left: skills || right: hobbies  figure out font size !important
+about me >> fade title text onmouseover
 profile picture
-fix fontawesome console errors
-
-
 
 update active tab style to white underline?????
 
+improve fix rotated text responsiveness???
 blog page???
 paralax scrollax main???
 seperators???
