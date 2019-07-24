@@ -1,5 +1,7 @@
 // declaring variables
 var hamburger = document.querySelector(".hamburger");
+var left_title = document.getElementById("titleleft");
+var right_title = document.getElementById("titleright");
 var quotes = [
   "It does not matter how slowly you go so long as you do not stop.",
   "If you don't stop going, you'll get there eventually.",
@@ -230,14 +232,16 @@ function quoterandomizer() {
   document.getElementById("textquote").innerHTML = quotes[randomquote];
 }
 
-// slider for projects section
+// slider for about section
 $(".slider__item").on("mouseover", function() {
   $(".slider__item").removeClass("active");
   $(this).addClass("active");
+  $("#titleleft").fadeOut();
 });
 $(".slider__item").on("mouseout", function() {
   $(".slider__item").removeClass("active");
   $(this).addClass("");
+  $("#titleleft").fadeIn();
 });
 
 // project section

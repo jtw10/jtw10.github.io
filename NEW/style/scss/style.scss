@@ -144,7 +144,7 @@ p {
 }
 
 .hero-sub-title {
-  font-family: $font-landing;
+  font-family: $font-secondary;
   -webkit-animation: fadeEffect 2s;
   animation: fadeEffect 2s;
 }
@@ -1344,8 +1344,22 @@ svg#bigTriangleColor {
   overflow: hidden;
 }
 
-.bigtitle {
+.bigtitle_left {
   font-weight: bold;
+  font-size: 3.5vh;
+  transform: rotate(290deg);
+  color: $white;
+  position: absolute;
+  right: 22%;
+}
+
+.bigtitle_right {
+  font-weight: bold;
+  font-size: 3.5vh;
+  transform: rotate(290deg);
+  color: $white;
+  position: absolute;
+  left: 27%;
 }
 
 .slider {
@@ -1362,12 +1376,18 @@ svg#bigTriangleColor {
 
   ul,
   li {
-    text-decoration: none;
+    list-style-type: none;
+    font-size: 50%;
+
+    h3 {
+      font-size: 60%;
+      text-decoration: underline;
+    }
   }
 
   $item: &;
   background: transparent;
-  height: 750px;
+  height: 650px;
   overflow: hidden;
   display: flex;
   margin-left: -50px;
@@ -1385,7 +1405,7 @@ svg#bigTriangleColor {
     &.active {
       flex: 4;
       opacity: 1;
-      #{$item}__textg {
+      #{$item}__textleft {
         transition: all 0.9s;
         color: #009fc0;
         font-size: 50px;
@@ -1395,7 +1415,7 @@ svg#bigTriangleColor {
     &.active {
       flex: 4;
       opacity: 1;
-      #{$item}__textd {
+      #{$item}__textright {
         transition: all 0.9s;
         color: #5494dd;
         font-size: 50px;
@@ -1419,17 +1439,16 @@ svg#bigTriangleColor {
     align-items: center;
     justify-content: center;
   }
-  &__textg {
+  &__textleft {
     color: #009fc0;
     font-size: 14px;
     font-weight: 200;
-    background: rgba(#ffffff, 0.9);
-    padding: 10px;
+    background: rgba(#ffffff, 0.7);
     opacity: 0;
     height: 90%;
+    width: 40%;
     display: inline-block;
-    align-items: center;
-    justify-content: center;
+    font-weight: 700;
   }
   &__img-aboutright {
     background-image: url("/images/iu4.jpg");
@@ -1447,25 +1466,13 @@ svg#bigTriangleColor {
     align-items: center;
     justify-content: center;
   }
-  &__textd {
+  &__textright {
     color: #5494dd;
     font-size: 14px;
     font-weight: 200;
     background: rgba(#ffffff, 0.9);
     padding: 10px;
     opacity: 0;
-  }
-}
-
-.aboutlist {
-  list-style-type: none;
-  font-size: 2vw;
-
-  h2 {
-    font-size: 3.5vw;
-  }
-  h3 {
-    font-size: 3vw;
   }
 }
 
@@ -1476,7 +1483,8 @@ div.project {
   width: 100%;
 }
 
-section {
+section,
+.section_alt {
   background: $primary;
   height: 300px;
   width: 70%;

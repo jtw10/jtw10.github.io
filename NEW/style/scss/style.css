@@ -9618,7 +9618,7 @@ p {
 }
 
 .hero-sub-title {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Oxygen", Arial, sans-serif;
   -webkit-animation: fadeEffect 2s;
   animation: fadeEffect 2s;
 }
@@ -10830,14 +10830,30 @@ svg#bigTriangleColor {
   overflow: hidden;
 }
 
-.bigtitle {
+.bigtitle_left {
   font-weight: bold;
+  font-size: 3.5vh;
+  -webkit-transform: rotate(290deg);
+          transform: rotate(290deg);
+  color: #fff;
+  position: absolute;
+  right: 22%;
+}
+
+.bigtitle_right {
+  font-weight: bold;
+  font-size: 3.5vh;
+  -webkit-transform: rotate(290deg);
+          transform: rotate(290deg);
+  color: #fff;
+  position: absolute;
+  left: 27%;
 }
 
 .slider {
   font-family: "Oxygen", Arial, sans-serif;
   background: transparent;
-  height: 750px;
+  height: 650px;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10857,7 +10873,14 @@ svg#bigTriangleColor {
 
 .slider ul,
 .slider li {
-  text-decoration: none;
+  list-style-type: none;
+  font-size: 50%;
+}
+
+.slider ul h3,
+.slider li h3 {
+  font-size: 60%;
+  text-decoration: underline;
 }
 
 .slider__item {
@@ -10883,7 +10906,7 @@ svg#bigTriangleColor {
   opacity: 1;
 }
 
-.slider__item.active .slider__textg {
+.slider__item.active .slider__textleft {
   -webkit-transition: all 0.9s;
   transition: all 0.9s;
   color: #009fc0;
@@ -10898,7 +10921,7 @@ svg#bigTriangleColor {
   opacity: 1;
 }
 
-.slider__item.active .slider__textd {
+.slider__item.active .slider__textright {
   -webkit-transition: all 0.9s;
   transition: all 0.9s;
   color: #5494dd;
@@ -10930,21 +10953,16 @@ svg#bigTriangleColor {
           justify-content: center;
 }
 
-.slider__textg {
+.slider__textleft {
   color: #009fc0;
   font-size: 14px;
   font-weight: 200;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
   opacity: 0;
   height: 90%;
+  width: 40%;
   display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  font-weight: 700;
 }
 
 .slider__img-aboutright {
@@ -10971,7 +10989,7 @@ svg#bigTriangleColor {
           justify-content: center;
 }
 
-.slider__textd {
+.slider__textright {
   color: #5494dd;
   font-size: 14px;
   font-weight: 200;
@@ -10980,26 +10998,14 @@ svg#bigTriangleColor {
   opacity: 0;
 }
 
-.aboutlist {
-  list-style-type: none;
-  font-size: 2vw;
-}
-
-.aboutlist h2 {
-  font-size: 3.5vw;
-}
-
-.aboutlist h3 {
-  font-size: 3vw;
-}
-
 div.project {
   text-align: center;
   display: table;
   width: 100%;
 }
 
-section {
+section,
+.section_alt {
   background: #3515c4;
   height: 300px;
   width: 70%;
