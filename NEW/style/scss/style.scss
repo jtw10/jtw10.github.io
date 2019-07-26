@@ -1133,9 +1133,7 @@ svg#bigTriangleColor {
 
 // quote of the day
 .quoteoftheday {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  height: 25vh;
+  height: 80px;
   width: 100%;
   position: relative;
   text-align: center;
@@ -1147,7 +1145,7 @@ svg#bigTriangleColor {
   &::before {
     position: absolute;
     content: "";
-    border-radius: 2em;
+    border-radius: 1em;
     height: 5px;
     background: linear-gradient(
       to right,
@@ -1332,7 +1330,7 @@ svg#bigTriangleColor {
 
   h1,
   h3 {
-    font-size: 2em;
+    font-size: 2vh;
   }
 }
 

@@ -10563,9 +10563,7 @@ svg#bigTriangleColor {
 }
 
 .quoteoftheday {
-  margin-top: 10%;
-  margin-bottom: 10%;
-  height: 25vh;
+  height: 80px;
   width: 100%;
   position: relative;
   text-align: center;
@@ -10584,7 +10582,7 @@ svg#bigTriangleColor {
 .quoteoftheday::before {
   position: absolute;
   content: "";
-  border-radius: 2em;
+  border-radius: 1em;
   height: 5px;
   background: -webkit-gradient(linear, left top, right top, from(rgba(22, 221, 221, 0.05)), to(#7e6af1));
   background: linear-gradient(to right, rgba(22, 221, 221, 0.05), #7e6af1);
@@ -10820,7 +10818,7 @@ svg#bigTriangleColor {
 
 .slant h1,
 .slant h3 {
-  font-size: 2em;
+  font-size: 2vh;
 }
 
 .aboutwrapper {
