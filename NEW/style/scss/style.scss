@@ -582,9 +582,9 @@ p {
   text-align: center;
   font-size: 0.75em;
   color: rgb(223, 223, 223);
-  padding: 3% 15%;
   background-image: linear-gradient(rgb(13, 19, 99), rgb(12, 6, 36));
   font-family: $font-secondary;
+  height: 2vh;
 }
 
 // contact
@@ -1325,7 +1325,7 @@ svg#bigTriangleColor {
 
 // slanted page
 .slant {
-  padding: 15% 10%;
+  padding: 3% 3%;
   background-image: linear-gradient(to right, rgb(2, 5, 163), rgb(12, 73, 185));
   transform: skewX(5deg);
   box-shadow: 5px 10px rgb(91, 149, 182);
