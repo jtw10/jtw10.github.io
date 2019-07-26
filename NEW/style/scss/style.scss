@@ -1279,9 +1279,9 @@ svg#bigTriangleColor {
       }
     }
 
-    &:hover {
-      &::before,
-      &:active {
+    &:hover,
+    &:active {
+      &::before {
         width: 60px;
       }
       li {

@@ -10756,39 +10756,39 @@ svg#bigTriangleColor {
   background-color: #e4405f;
 }
 
-.center ul.share:hover::before, .center ul.share:hover:active {
+.center ul.share:hover::before, .center ul.share:active::before {
   width: 60px;
 }
 
-.center ul.share:hover li:nth-child(1) a {
+.center ul.share:hover li:nth-child(1) a, .center ul.share:active li:nth-child(1) a {
   -webkit-transform: translatex(68px) rotate(360deg);
           transform: translatex(68px) rotate(360deg);
   -webkit-transition-delay: 0.8s;
           transition-delay: 0.8s;
 }
 
-.center ul.share:hover li:nth-child(2) a {
+.center ul.share:hover li:nth-child(2) a, .center ul.share:active li:nth-child(2) a {
   -webkit-transform: translatex(136px) rotate(360deg);
           transform: translatex(136px) rotate(360deg);
   -webkit-transition-delay: 0.6s;
           transition-delay: 0.6s;
 }
 
-.center ul.share:hover li:nth-child(3) a {
+.center ul.share:hover li:nth-child(3) a, .center ul.share:active li:nth-child(3) a {
   -webkit-transform: translatex(204px) rotate(360deg);
           transform: translatex(204px) rotate(360deg);
   -webkit-transition-delay: 0.4s;
           transition-delay: 0.4s;
 }
 
-.center ul.share:hover li:nth-child(4) a {
+.center ul.share:hover li:nth-child(4) a, .center ul.share:active li:nth-child(4) a {
   -webkit-transform: translatex(272px) rotate(360deg);
           transform: translatex(272px) rotate(360deg);
   -webkit-transition-delay: 0.2s;
           transition-delay: 0.2s;
 }
 
-.center ul.share:hover li:nth-child(5) a {
+.center ul.share:hover li:nth-child(5) a, .center ul.share:active li:nth-child(5) a {
   -webkit-transform: translatex(340px) rotate(360deg);
           transform: translatex(340px) rotate(360deg);
   -webkit-transition-delay: 0s;
