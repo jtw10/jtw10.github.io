@@ -9987,6 +9987,7 @@ p {
 #section4 {
   background-image: -webkit-gradient(linear, right top, left top, from(#4684b4), to(#075d9e));
   background-image: linear-gradient(to left, #4684b4, #075d9e);
+  height: auto;
 }
 
 .pagecontent {
@@ -10069,7 +10070,13 @@ p {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#0d1363), to(#0c0624));
   background-image: linear-gradient(#0d1363, #0c0624);
   font-family: "Oxygen", Arial, sans-serif;
-  height: 2vh;
+  height: auto;
+  padding: 1%;
+}
+
+.footer p {
+  position: relative;
+  vertical-align: middle;
 }
 
 .contact {
@@ -10749,7 +10756,7 @@ svg#bigTriangleColor {
   background-color: #e4405f;
 }
 
-.center ul.share:hover::before {
+.center ul.share:hover::before, .center ul.share:hover:active {
   width: 60px;
 }
 
@@ -10789,8 +10796,8 @@ svg#bigTriangleColor {
 }
 
 .center ul.share::before {
-  content: "\f1e0";
-  font-family: "Font Awesome\ 5 Free";
+  content: "\f064";
+  font-family: "Font Awesome 5 Free";
   position: absolute;
   width: 100%;
   height: 100%;
@@ -10800,6 +10807,7 @@ svg#bigTriangleColor {
   line-height: 60px;
   color: #fff;
   font-size: 30px;
+  font-weight: 900;
   padding-left: 2px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -10816,9 +10824,14 @@ svg#bigTriangleColor {
           box-shadow: 5px 10px #5b95b6;
 }
 
-.slant h1,
+.slant h1 {
+  font-size: 3vh;
+  font-family: "Viga", Arial, sans-serif;
+}
+
 .slant h3 {
   font-size: 2vh;
+  font-family: "Oxygen", Arial, sans-serif;
 }
 
 .aboutwrapper {

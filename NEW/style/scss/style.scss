@@ -488,6 +488,7 @@ p {
 
 #section4 {
   background-image: linear-gradient(to left, $color1, $color4);
+  height: auto;
 }
 
 // page content
@@ -584,7 +585,13 @@ p {
   color: rgb(223, 223, 223);
   background-image: linear-gradient(rgb(13, 19, 99), rgb(12, 6, 36));
   font-family: $font-secondary;
-  height: 2vh;
+  height: auto;
+  padding: 1%;
+
+  p {
+    position: relative;
+    vertical-align: middle;
+  }
 }
 
 // contact
@@ -1271,8 +1278,10 @@ svg#bigTriangleColor {
         background-color: #e4405f;
       }
     }
+
     &:hover {
-      &::before {
+      &::before,
+      &:active {
         width: 60px;
       }
       li {
@@ -1303,8 +1312,8 @@ svg#bigTriangleColor {
       }
     }
     &::before {
-      content: "\f1e0";
-      font-family: "Font Awesome\ 5 Free";
+      content: "\f064";
+      font-family: "Font Awesome 5 Free";
       position: absolute;
       width: 100%;
       height: 100%;
@@ -1314,6 +1323,7 @@ svg#bigTriangleColor {
       line-height: 60px;
       color: #fff;
       font-size: 30px;
+      font-weight: 900;
       padding-left: 2px;
       transition: 0.5s;
       z-index: 1;
@@ -1328,9 +1338,14 @@ svg#bigTriangleColor {
   transform: skewX(5deg);
   box-shadow: 5px 10px rgb(91, 149, 182);
 
-  h1,
+  h1 {
+    font-size: 3vh;
+    font-family: $font-primary;
+  }
+
   h3 {
     font-size: 2vh;
+    font-family: $font-secondary;
   }
 }
 
