@@ -10821,6 +10821,8 @@ svg#bigTriangleColor {
     -webkit-box-pack: left;
         -ms-flex-pack: left;
             justify-content: left;
+    width: 282px;
+    height: 60px;
   }
   .center ul.share {
     position: relative;
