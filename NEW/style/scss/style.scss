@@ -1515,10 +1515,14 @@ section,
 }
 
 aside {
-  background: $secondary;
+  background: linear-gradient(-70deg, $primary, $secondary);
   height: 300px;
   width: 30%;
   display: table-cell;
+
+  a {
+    color: $color5;
+  }
 }
 
 .aside_alt {

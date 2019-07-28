@@ -11033,10 +11033,14 @@ section,
 }
 
 aside {
-  background: #35b9a3;
+  background: linear-gradient(-70deg, #3515c4, #35b9a3);
   height: 300px;
   width: 30%;
   display: table-cell;
+}
+
+aside a {
+  color: #033962;
 }
 
 .aside_alt {
