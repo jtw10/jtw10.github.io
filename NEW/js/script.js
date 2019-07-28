@@ -2,6 +2,8 @@
 var hamburger = document.querySelector(".hamburger");
 var left_title = document.getElementById("titleleft");
 var right_title = document.getElementById("titleright");
+var navlinks = document.getElementsByClassName("nav-links");
+var navcount = navlinks.count;
 var quotes = [
   "It does not matter how slowly you go so long as you do not stop.",
   "If you don't stop going, you'll get there eventually.",
@@ -59,6 +61,29 @@ hamburger.addEventListener("click", function() {
     nav_close();
   }
 });
+
+// close navbar on mobile after clicking link
+/*
+function mobilenav() {
+  var nav1 = document.getElementById("nav1");
+  var nav2 = document.getElementById("nav2");
+  var nav3 = document.getElementById("nav3");
+  var nav4 = document.getElementById("nav4");
+
+  function navmobile() {
+    nav_close();
+    hamburger.className = "hamburger hamburger--elastic";
+  }
+
+  if (window.innerWidth < 550) {
+    console.log("mobile window");
+    nav1.addEventListener("click", navmobile);
+    nav2.addEventListener("click", navmobile);
+    nav3.addEventListener("click", navmobile);
+    nav4.addEventListener("click", navmobile);
+  }
+}
+*/
 
 // scroll animation for arrow
 $(document).ready(function() {

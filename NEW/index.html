@@ -26,10 +26,10 @@
         </h6>
         <hr class="horizontal-faded" />
         <ul>
-          <li><a href="#p1" class="nav-links active">Home</a></li>
-          <li><a href="#p2" class="nav-links">About Me</a></li>
-          <li><a href="#p3" class="nav-links">Projects</a></li>
-          <li><a href="#p4" class="nav-links">Contact</a></li>
+          <li><a href="#p1" id="nav1" class="nav-links active">Home</a></li>
+          <li><a href="#p2" id="nav2" class="nav-links">About Me</a></li>
+          <li><a href="#p3" id="nav3" class="nav-links">Projects</a></li>
+          <li><a href="#p4" id="nav4" class="nav-links">Contact</a></li>
         </ul>
       </div>
       <div id="nav-footer">
@@ -133,9 +133,7 @@
             </div>
           </div>
         </div>
-
       </div>
-
     </div>
 
 
@@ -284,6 +282,8 @@
     window.onload = run(8000, 6);
     // random quote of the day
     window.onload = quoterandomizer();
+    // function for mobile navbar behaviour
+    // window.onload = mobilenav();
   </script>
 </body>
 
@@ -291,14 +291,12 @@
 
 <!--
 to-do:
-about me >> left: skills || right: hobbies  figure out font size !important
-profile picture
-
-hero: responsive font size -> mobile responsiveness
-
+about me >> left: skills || right: hobbies figure out font size !important
 @media for share section -> share buttons not working & animation covering text
+center and fit project aside text
 
 future considerations:
+hero: responsive font size? -> change look for mobile?
 django project image -> carousel?
 update active tab style to white underline?????
 improve fix rotated text responsiveness???
