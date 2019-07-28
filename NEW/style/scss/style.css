@@ -9544,6 +9544,8 @@ p {
   position: relative;
   font-family: "Viga", Arial, sans-serif;
   background-size: cover;
+  -webkit-box-shadow: inset 0 0 100px black;
+          box-shadow: inset 0 0 100px black;
   -webkit-transition: opacity 1s ease-in-out;
   transition: opacity 1s ease-in-out;
 }
@@ -11061,12 +11063,16 @@ aside {
   background-image: url("/images/wip.jpg");
   background-size: cover;
   text-shadow: #343a40 2px 2px;
+  -webkit-box-shadow: inset 0 0 100px black;
+          box-shadow: inset 0 0 100px black;
 }
 
 .igbot {
   background: url("/images/ig0.gif") no-repeat center center;
   background-size: cover;
   text-shadow: #343a40 2px 2px;
+  -webkit-box-shadow: inset 0 0 100px black;
+          box-shadow: inset 0 0 100px black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -11076,5 +11082,7 @@ aside {
   background-image: url("/images/django0.jpg");
   background-size: cover;
   text-shadow: #343a40 2px 2px;
+  -webkit-box-shadow: inset 0 0 100px black;
+          box-shadow: inset 0 0 100px black;
 }
 /*# sourceMappingURL=style.css.map */

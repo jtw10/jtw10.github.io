@@ -22,6 +22,8 @@ $secondary: #35b9a3;
 
 $heroimage: url(/images/bg1.jpg);
 
+$vignette: inset 0 0 100px black;
+
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
@@ -77,6 +79,7 @@ p {
   position: relative;
   font-family: $font-primary;
   background-size: cover;
+  box-shadow: $vignette;
   @include herotransition(all, 2s, ease-out);
 
   &::before {
@@ -1543,12 +1546,14 @@ aside {
   background-image: url("/images/wip.jpg");
   background-size: cover;
   text-shadow: #343a40 2px 2px;
+  box-shadow: $vignette;
 }
 
 .igbot {
   background: url("/images/ig0.gif") no-repeat center center;
   background-size: cover;
   text-shadow: #343a40 2px 2px;
+  box-shadow: $vignette;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -1558,4 +1563,5 @@ aside {
   background-image: url("/images/django0.jpg");
   background-size: cover;
   text-shadow: #343a40 2px 2px;
+  box-shadow: $vignette;
 }
