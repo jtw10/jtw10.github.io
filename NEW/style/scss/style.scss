@@ -1335,8 +1335,6 @@ svg#bigTriangleColor {
 
   @media (max-width: 600px) {
     justify-content: left;
-    width: 282px;
-    height: 60px;
 
     ul.share {
       position: relative;
@@ -1349,39 +1347,7 @@ svg#bigTriangleColor {
       font-size: 20px;
       text-align: center;
       line-height: 40px;
-
-      &:hover {
-        transform: translateX(0px) rotate(0deg);
-      }
-
-      &:active {
-        &::before {
-          width: 40px;
-          margin: 0;
-          padding: 0;
-        }
-        transform: translateX(0px) rotate(0deg);
-      }
-
-      &::before {
-        content: "\f064";
-        font-family: "Font Awesome 5 Free";
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, #8400ff, #c32be2);
-        border-radius: 20px;
-        text-align: center;
-        line-height: 40px;
-        color: #fff;
-        font-size: 20px;
-        font-weight: 900;
-        padding-left: 0px;
-        z-index: 1;
-        display: none;
-        transform: translateX(0px) rotate(0deg);
-      }
-
+      pointer-events: none;
       li {
         width: 40px;
 
@@ -1412,6 +1378,28 @@ svg#bigTriangleColor {
         &:nth-child(5) a {
           transform: translatex(275px) rotate(360deg);
         }
+      }
+      &:hover {
+        transform: translateX(0px) rotate(0deg);
+      }
+
+      &::before {
+        content: "\f064";
+        font-family: "Font Awesome 5 Free";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, #8400ff, #c32be2);
+        border-radius: 20px;
+        text-align: center;
+        line-height: 40px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 900;
+        padding-left: 0px;
+        z-index: 1;
+        display: none;
+        transform: translateX(0px) rotate(0deg);
       }
     }
   }
