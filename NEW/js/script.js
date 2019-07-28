@@ -245,10 +245,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
   ) {
     isMobile = true;
   }
-
-  if (isMobile == true) {
+  // hiding whatsapp icon based on device
+  /*
+  if (isMobile == false) {
     $("#share-wa").hide();
   }
+  */
 });
 
 // quote randomizer
