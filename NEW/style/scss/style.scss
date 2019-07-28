@@ -1440,7 +1440,7 @@ svg#bigTriangleColor {
     }
   }
   &__img-aboutleft {
-    background-image: url("/images/iu4.jpg");
+    background-image: url("/images/working.jpg");
     background-color: #009fc0;
     background-blend-mode: multiply;
     background-size: cover;
@@ -1467,7 +1467,7 @@ svg#bigTriangleColor {
     font-weight: 700;
   }
   &__img-aboutright {
-    background-image: url("/images/iu4.jpg");
+    background-image: url("/images/hobbies.jpg");
     background-color: #5494dd;
     background-blend-mode: multiply;
     background-size: cover;
@@ -1519,6 +1519,9 @@ aside {
   height: 300px;
   width: 30%;
   display: table-cell;
+  padding-left: 2%;
+  padding-right: 2%;
+  text-align: center;
 
   a {
     color: $color5;
@@ -1541,8 +1544,10 @@ aside {
 
   aside {
     display: block;
-    height: 300px;
+    height: auto;
     width: 100%;
+    text-align: center;
+    padding: 5% 15%;
   }
 }
 
