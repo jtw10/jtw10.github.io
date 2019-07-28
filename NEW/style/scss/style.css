@@ -11064,10 +11064,12 @@ aside {
 }
 
 .igbot {
-  background-size: cover;
-  text-shadow: #343a40 2px 2px;
   background: url("/images/ig0.gif") no-repeat center center;
   background-size: cover;
+  text-shadow: #343a40 2px 2px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .django {
