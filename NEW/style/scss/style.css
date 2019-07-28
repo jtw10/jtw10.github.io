@@ -11037,9 +11037,8 @@ aside {
   height: 300px;
   width: 30%;
   display: table-cell;
-  padding-left: 2%;
-  padding-right: 2%;
-  text-align: center;
+  padding: 5% 2%;
+  vertical-align: middle;
 }
 
 aside a {
