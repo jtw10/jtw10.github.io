@@ -10921,7 +10921,7 @@ svg#bigTriangleColor {
 
 .bigtitle_left {
   font-weight: bold;
-  font-size: 3.5vh;
+  font-size: 5.5vh;
   -webkit-transform: rotate(290deg);
           transform: rotate(290deg);
   color: #fff;
@@ -10931,7 +10931,7 @@ svg#bigTriangleColor {
 
 .bigtitle_right {
   font-weight: bold;
-  font-size: 3.5vh;
+  font-size: 5.5vh;
   -webkit-transform: rotate(290deg);
           transform: rotate(290deg);
   color: #fff;
@@ -11045,12 +11045,13 @@ svg#bigTriangleColor {
 .slider__textleft {
   color: #009fc0;
   font-size: 14px;
-  font-weight: 200;
   background: rgba(255, 255, 255, 0.7);
   opacity: 0;
-  height: 90%;
-  width: 40%;
-  display: inline-block;
+  height: auto;
+  width: auto;
+  border-radius: 5%;
+  padding: 3% 2% 0%;
+  display: table-cell;
   font-weight: 700;
 }
 
@@ -11081,10 +11082,14 @@ svg#bigTriangleColor {
 .slider__textright {
   color: #5494dd;
   font-size: 14px;
-  font-weight: 200;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 10px;
+  background: rgba(255, 255, 255, 0.7);
   opacity: 0;
+  height: auto;
+  width: auto;
+  border-radius: 5%;
+  padding: 3% 2% 0%;
+  display: table-cell;
+  font-weight: 700;
 }
 
 div.project {

@@ -1348,9 +1348,9 @@ svg#bigTriangleColor {
       text-align: center;
       line-height: 40px;
       pointer-events: none;
+
       li {
         width: 40px;
-
         a {
           text-align: center;
           line-height: 40px;
@@ -1433,7 +1433,7 @@ svg#bigTriangleColor {
 
 .bigtitle_left {
   font-weight: bold;
-  font-size: 3.5vh;
+  font-size: 5.5vh;
   transform: rotate(290deg);
   color: $white;
   position: absolute;
@@ -1442,7 +1442,7 @@ svg#bigTriangleColor {
 
 .bigtitle_right {
   font-weight: bold;
-  font-size: 3.5vh;
+  font-size: 5.5vh;
   transform: rotate(290deg);
   color: $white;
   position: absolute;
@@ -1529,12 +1529,13 @@ svg#bigTriangleColor {
   &__textleft {
     color: #009fc0;
     font-size: 14px;
-    font-weight: 200;
     background: rgba(#ffffff, 0.7);
     opacity: 0;
-    height: 90%;
-    width: 40%;
-    display: inline-block;
+    height: auto;
+    width: auto;
+    border-radius: 5%;
+    padding: 3% 2% 0%;
+    display: table-cell;
     font-weight: 700;
   }
   &__img-aboutright {
@@ -1556,10 +1557,14 @@ svg#bigTriangleColor {
   &__textright {
     color: #5494dd;
     font-size: 14px;
-    font-weight: 200;
-    background: rgba(#ffffff, 0.9);
-    padding: 10px;
+    background: rgba(#ffffff, 0.7);
     opacity: 0;
+    height: auto;
+    width: auto;
+    border-radius: 5%;
+    padding: 3% 2% 0%;
+    display: table-cell;
+    font-weight: 700;
   }
 }
 
