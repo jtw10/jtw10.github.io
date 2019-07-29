@@ -11050,9 +11050,13 @@ svg#bigTriangleColor {
   height: auto;
   width: auto;
   border-radius: 5%;
-  padding: 3% 2% 0%;
+  padding: 2% 2% 0%;
   display: table-cell;
   font-weight: 700;
+}
+
+.slider__textleft li.last {
+  margin-bottom: 10px;
 }
 
 .slider__img-aboutright {
