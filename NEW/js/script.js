@@ -111,6 +111,28 @@ $(document).ready(function() {
       } else {
         currLink.removeClass("active");
       }
+      if (window.innerWidth < 950) {
+        if (
+          refElement.position().top - 55 <= scrollPos &&
+          refElement.position().top + refElement.height() > scrollPos
+        ) {
+          $(".navcenter ul li a").removeClass("active");
+          currLink.addClass("active");
+        } else {
+          currLink.removeClass("active");
+        }
+      }
+      if (window.innerWidth < 1050) {
+        if (
+          refElement.position().top - 25 <= scrollPos &&
+          refElement.position().top + refElement.height() > scrollPos
+        ) {
+          $(".navcenter ul li a").removeClass("active");
+          currLink.addClass("active");
+        } else {
+          currLink.removeClass("active");
+        }
+      }
     });
   }
 
