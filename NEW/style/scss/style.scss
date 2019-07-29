@@ -1446,7 +1446,7 @@ svg#bigTriangleColor {
   transform: rotate(290deg);
   color: $white;
   position: absolute;
-  left: 29%; // 27% previously
+  left: 22%; // 27% previously
 }
 
 .slider {
@@ -1465,6 +1465,10 @@ svg#bigTriangleColor {
   li {
     list-style-type: none;
     font-size: 50%;
+
+    .last {
+      margin-bottom: 10px;
+    }
 
     h3 {
       font-size: 60%;
@@ -1537,10 +1541,6 @@ svg#bigTriangleColor {
     padding: 2% 2% 0%;
     display: table-cell;
     font-weight: 700;
-
-    li.last {
-      margin-bottom: 10px;
-    }
   }
   &__img-aboutright {
     background-image: url("/images/hobbies.jpg");
@@ -1564,9 +1564,9 @@ svg#bigTriangleColor {
     background: rgba(#ffffff, 0.7);
     opacity: 0;
     height: auto;
-    width: auto;
+    width: 30%;
     border-radius: 5%;
-    padding: 3% 2% 0%;
+    padding: 2%;
     display: table-cell;
     font-weight: 700;
   }
@@ -1605,6 +1605,10 @@ aside {
   a {
     color: $color5;
   }
+
+  @media (max-width: 975px) {
+    font-size: 3vmin;
+  }
 }
 
 .aside_alt {
@@ -1614,7 +1618,7 @@ aside {
   display: table-cell;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 975px) {
   section {
     display: block;
     height: 300px;

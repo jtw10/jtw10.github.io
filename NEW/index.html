@@ -15,6 +15,7 @@
 </head>
 
 <body>
+  
   <!-- navbar (default: inactive) -->
   <div id="nav" class="sidenav">
     <div id="nav-inner">
@@ -27,7 +28,7 @@
         <hr class="horizontal-faded" />
         <ul>
           <li><a href="#p1" id="nav1" class="nav-links active">Home</a></li>
-          <li><a href="#p2" id="nav2" class="nav-links">About Me</a></li>
+          <li><a href="#p2" id="nav2" class="nav-links">Meet Josh</a></li>
           <li><a href="#p3" id="nav3" class="nav-links">Projects</a></li>
           <li><a href="#p4" id="nav4" class="nav-links">Contact</a></li>
         </ul>
@@ -56,6 +57,7 @@
 
   <!-- all content inside the main div will be pushed right by the nav -->
   <div id="main">
+
     <!-- hamburger to open the nav -->
     <div id="hamburger-shell">
       <button class="hamburger hamburger--elastic" style="outline: none;" type="button">
@@ -64,6 +66,7 @@
         </span>
       </button>
     </div>
+
     <!-- hero image -->
     <div class="hero flex-center" id="p1">
       <div class="hero-message">
@@ -84,17 +87,17 @@
     </div>
     <!-- content below hero image -->
 
-    <!-- about me section -->
+    <!-- meet josh section -->
     <div class="not-hero flex-center bg-info" id="p2">
       <div class="pagecontent_about" id="section1">
         <div data-aos="fade-up" data-aos-duration="1000">
-          <h1 class="hero-title">About Me</h1>
+          <h1 class="hero-title">Meet Josh</h1>
         </div>
         <div class="aboutwrapper">
           <div class="slider">
             <div class="slider__item" id="left__slider">
               <div class="slider__img-aboutleft">              
-                <span class="bigtitle_left" id="titleleft">Technical Skills:</span>
+                <span class="bigtitle_left" id="titleleft">Technical Skills</span>
                 <div class="slider__textleft">
                   <div>
                     <ul class="aboutlist">
@@ -124,15 +127,26 @@
             </div>
             <div class="slider__item" id="right__slider">
               <div class="slider__img-aboutright">
-                <span class="bigtitle_right" id="titleright">Hobbies:</span>
+                <span class="bigtitle_right" id="titleright">All About Josh</span>
                 <div class="slider__textright">
                   <div>
-                    <div>
-                      In my free time I enjoy exploring the mountains, 
-                      playing sports in recreational leagues, 
-                      consuming delicious food, 
-                      and keeping up with the latest technology.
-                    </div>
+                    <ul>
+                      <h2>Meet Josh:</h2>
+                      <hr class="horizontal-faded">
+                      <li class="last">
+                        Hi, my name is Josh and I am currently a computing student at BCIT.
+                        I have a background in environmental science and am working towards a career in the tech industry.
+                      </li>
+                      <li class="last">
+                        In my free time I enjoy exploring the mountains and taking in the breathtaking views.
+                        All of the pictures on the home page are taken by myself.
+                      </li>
+                      <li class="last">
+                        In the evening you can find me playing sports in local rec leagues and 
+                        eating at the newest restaurants, markets, and food trucks.
+                        Given the opportunity, I would love to travel frequently in the future.
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -141,8 +155,6 @@
         </div>
       </div>
     </div>
-
-
 
     <!-- projects section -->
     <div class="not-hero flex-center bg-info" id="p3">
@@ -154,12 +166,16 @@
         <!-- project 1 -->
         <div class="project">
           <section class="django">        
-            <h3>Django Forums</h3>
+            <h3>Joshboards</h3>
           </section>
           <aside>
             <div>
               A dynamic web application created using Django and deployed on Heroku. 
-              Feel free to create an account and join in on the discussion!
+              Feel free to create an account and join in on the discussion.
+            </div>
+            <br>
+            <div>
+              Meet friends, get feedback on your projects, and chat about anything you like!
             </div>
             <br>            
             <div>
@@ -175,11 +191,11 @@
         <!-- project 2 -->
         <div class="project">
           <section class="igbot">
-            <h3>Instagram Bot</h3>
+            <h3>py-stagram</h3>
           </section>
           <aside>
             <div>
-              Using Python and Selenium, this program can take care of your Instagram account for you.
+              Using Python and Selenium, this program can take care of your Instagram account(s) for you.
               Like and comment on posts, follow other users, and track your account's growth!
             </div>
             <br>
@@ -199,7 +215,8 @@
           <aside>
             <div>
               <div>
-                Coming soon to a website near you!
+                Coming soon to a website near you! For now, enjoy this passage...
+                "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
               </div>
               <br>
               <div>
@@ -210,8 +227,27 @@
             </div>
           </aside>
         </div>
+
+        <!-- project 4 -->
+        <div class="project">
+          <section class="#">
+            <h3>Great Invention Placeholder</h3>
+          </section>
+          <aside>
+            <div>
+              Lorem Ipsum Latin Issum Thingelserum.
+            </div>
+            <br>
+            <div>
+              View the source code on
+              <a href="https://github.com/jtw10/ig-bot">Github</a><!--  
+              -->.
+            </div>
+          </aside>
+        </div>
       </div>
     </div>
+
     <!-- contact me section -->
     <div class="not-hero flex-center bg-info" id="p4">
       <div class="pagecontent_contact" id="section3">
@@ -239,6 +275,7 @@
         </div>
       </div>
     </div>
+
     <!-- quote of the day section -->
     <div class="not-hero flex-center bg-info" id="quotes">
       <div class="pagecontent" id="section4">
@@ -302,7 +339,6 @@
 
 <!--
 to-do:
-about me >> left: skills || right: hobbies figure out font size !important
 @media for share section -> share buttons not working & animation covering text
 
 future considerations:

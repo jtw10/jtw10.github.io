@@ -10936,7 +10936,7 @@ svg#bigTriangleColor {
           transform: rotate(290deg);
   color: #fff;
   position: absolute;
-  left: 29%;
+  left: 22%;
 }
 
 .slider {
@@ -10964,6 +10964,11 @@ svg#bigTriangleColor {
 .slider li {
   list-style-type: none;
   font-size: 50%;
+}
+
+.slider ul .last,
+.slider li .last {
+  margin-bottom: 10px;
 }
 
 .slider ul h3,
@@ -11055,10 +11060,6 @@ svg#bigTriangleColor {
   font-weight: 700;
 }
 
-.slider__textleft li.last {
-  margin-bottom: 10px;
-}
-
 .slider__img-aboutright {
   background-image: url("/images/hobbies.jpg");
   background-color: #5494dd;
@@ -11089,9 +11090,9 @@ svg#bigTriangleColor {
   background: rgba(255, 255, 255, 0.7);
   opacity: 0;
   height: auto;
-  width: auto;
+  width: 30%;
   border-radius: 5%;
-  padding: 3% 2% 0%;
+  padding: 2%;
   display: table-cell;
   font-weight: 700;
 }
@@ -11130,6 +11131,12 @@ aside a {
   color: #033962;
 }
 
+@media (max-width: 975px) {
+  aside {
+    font-size: 3vmin;
+  }
+}
+
 .aside_alt {
   background: #3515c4;
   height: 300px;
@@ -11137,7 +11144,7 @@ aside a {
   display: table-cell;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 975px) {
   section {
     display: block;
     height: 300px;
