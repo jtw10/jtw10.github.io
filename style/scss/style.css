@@ -9526,7 +9526,8 @@ html,
 body {
   height: 100vh;
   width: 100vw;
-  overflow: visible;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
