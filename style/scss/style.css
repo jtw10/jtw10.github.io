@@ -10893,6 +10893,12 @@ svg#bigTriangleColor {
   }
 }
 
+@media (max-width: 600px) {
+  #sharediv {
+    display: none;
+  }
+}
+
 .slant {
   padding: 3% 3%;
   background-image: -webkit-gradient(linear, left top, right top, from(#0205a3), to(#0c49b9));
